@@ -1,0 +1,84 @@
+body{
+    background-color: #00132d;
+    color: #fff;
+    font-family: Kollektif, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: Kollektif;
+    src: url('/fonts/Kollektif.ttf');
+}
+@font-face {
+    font-family: Kollektif;
+    src: url('/fonts/Kollektif-Bold.ttf');
+    font-weight: bold;
+}
+.navbar{
+    padding: 30px;
+
+}
+
+.nav-links{
+    color: #fff;
+    opacity: 50%;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.nav-links:current, .nav-links:active{
+    color: #3ee969;
+    opacity: 100%;
+}
+
+.nav-links:hover{
+    opacity: 100%;
+
+}
+
+.section{
+    background-image: url('/img/galaxy_background.jpeg');
+    background-position: 0% 0%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: white 1px solid;
+    box-shadow: white 0px 3px 3px;
+}
+
+.container{
+    display: inline-block;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*text-align: center;*/
+}
+
+.subtitle{
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 50px;
+}
+
+.big-title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin:50px;
+    display: block;
+    line-height: 44px;
+}
+
+span{
+    color: #3ee969;
+}
+
+.about{
+
+}
