@@ -1,30 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <title>shinykiwi</title>
     <link rel="stylesheet" href="style.css" >
 </head>
-<body>
-<div class="navbar">
-    <a class="nav-links" href="index.html">HOME</a>
-    <a class="nav-links" href="art.html">ART</a>
-</div>
-<div class="section">
-    <div class="container">
-        <div style="width: 25%">
-            <h1 class="big-title" >hi, my name is <span>shinykiwi</span></h1>
-        </div>
-        <div style="width: 25%">
-            <p class="subtitle" >I'm a full-time student studying computer science and computation arts to eventually work in game development. I'm passionate about the art and craft of making games, and I hope to work in that environment someday.I am open to commissions if you're looking for something specific. What's shown on this site may not represent everything that I can do or am open to, so if you want something that's not here currently, please don't hesitate to reach out and ask; I love learning new things :)</p>
-        </div>
-
+<body class="antialiased text-white bg-background">
+    <div class="flex flex-col justify-between h-screen max-w-screen-lg mx-auto">
+        <header class="flex items-center justify-center py-10 text-base leading-5">
+            <div class="block">
+                <a class="p-4 font-medium text-gray-100 hover:underline" href="index.html">Home</a>
+                <a class="p-4 font-medium text-gray-100 hover:underline" href="blog.html">Blog</a>
+                <a class="p-4 font-medium text-gray-100 hover:underline" href="art.html">Art</a>
+            </div>
+        </header>
+        <main class="mb-auto">
+            <main>
+                <div class="p-5">
+                    <div class="container mx-auto max-w-screen-lg">
+                        <div class="flex w-full flex-wrap items-start justify-start">
+                            <div class="flex w-full justify-center">
+                                <img alt="Kira's profile picture" src="img/profile-pic.jpeg" width="400" height="400" decoding="async" data-nimg="1" style="color: transparent" class="rounded-lg" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="flex-no-wrap mt-1 flex h-full w-full justify-center py-2">
+                            <a aria-label="github" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-gray-400 bg-gray-500" target="_blank" href="https://github.com/shinykiwi" rel="noopener noreferrer">G</a>
+                            <a aria-label="linkedin" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-indigo-400 bg-indigo-500" target="_blank" href="https://github.com/shinykiwi" rel="noopener noreferrer">L</a>
+                            <a aria-label="twitter" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-blue-400 bg-blue-500" target="_blank" href="https://github.com/shinykiwi" rel="noopener noreferrer">T</a>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-wrap items-center justify-center text-center">
+                                <div class="hidden w-full lg:block">
+                                    <h1 class="text-2xl font-semibold text-white">
+                                        "Kira "
+                                        <span class="text-sm">(shinykiwi)</span>
+                                    </h1>
+                                </div>
+                                <div class="block flex-col font-semibold text-white">
+                                    <h1 class="text-3xl">Kira</h1>
+                                    <h2 class="text-sm">(shinykiwi)</h2>
+                                </div>
+                                <div class="w-full py-1">
+                                    <span class="text-sm text-indigo-400">
+                                        Game Developer
+                                    </span>
+                                </div>
+                                <div class="w-full">
+                                    <p class="text-sm font-medium text-gray-200">
+                                        Passionate about crafting functional web applications while I continuously try to expand my
+                                        <span class="under text-blue-300">skillset</span>
+                                        . I have used computers extensively, and that has helped me learn software, hardware, networks &amp; routers. Everything I know is
+                                        <span class="under text-blue-300">self-taught</span>
+                                        and I have to thank my
+                                        <span class="under text-blue-300">quick learner ability</span>
+                                        for that. I'm very
+                                        <span class="under text-blue-300">enthusiastic about technology</span>
+                                        and I try to keep up-to-date.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-wrap">
+                        <div class="w-full pt-4">
+                            <div class="flex flex-wrap max-w-screen-lg gap-2 mx-auto">
+                                <div class="flex items-center justify-center h-6 px-2 text-xs font-semibold uppercase rounded-full bg-yellow-500/25 text-yellow-400">
+                                    node.js
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </main>
     </div>
-</div>
-
-<div class="about">
-
-</div>
 
 </body>
 </html>
