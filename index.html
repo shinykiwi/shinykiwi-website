@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head >
     <meta charset="UTF-8">
     <title>shinykiwi</title>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="dist/output.css" >
 </head>
-<body class="antialiased text-white bg-background">
+<body class="antialiased text-white dark:bg-black" >
     <div class="flex flex-col justify-between h-screen max-w-screen-lg mx-auto">
         <header class="flex items-center justify-center py-10 text-base leading-5">
             <div class="block">
@@ -17,28 +17,29 @@
         <main class="mb-auto">
             <main>
                 <div class="p-5">
-                    <div class="container mx-auto max-w-screen-lg">
-                        <div class="flex w-full flex-wrap items-start justify-start">
-                            <div class="flex w-full justify-center">
-                                <img alt="Kira's profile picture" src="img/profile-pic.jpeg" width="400" height="400" decoding="async" data-nimg="1" style="color: transparent" class="rounded-lg" loading="lazy">
+                    <div class="container mx-auto max-w-screen-lg flex">
+                        <div class="flex flex-no-wrap items-start">
+                            <div class="flex">
+                                <img alt="Kira's profile picture" src="img/profile-pic.jpeg" width="200" height="200" decoding="async" data-nimg="1" style="color: transparent" class="rounded-lg" loading="lazy">
+                            </div>
+                            <div class=" flex flex-col mx-4">
+                                <a aria-label="github" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-gray-400 bg-gray-500 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300" target="_blank" href="https://github.com/shinykiwi" rel="noopener noreferrer">
+                                    <img src="img/github-mark.svg" width="24" height="24" alt="GithubLogo">
+                                </a>
+                                <a aria-label="linkedin" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-indigo-400 bg-indigo-500 mt-1 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" target="_blank" href="https://www.linkedin.com/in/kira-fountain/" rel="noopener noreferrer">
+                                    <img src="img/linkedin.svg" width="24" height="24" alt="LinkedinLogo">
+                                </a>
+                                <a aria-label="twitter" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-blue-400 bg-blue-500 mt-1 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300" target="_blank" href="https://twitter.com/shinyk1w1" rel="noopener noreferrer">
+                                    <img src="img/twitter.svg" width="24" height="24" alt="TwitterLogo">
+                                </a>
                             </div>
                         </div>
-                        <div class="flex-no-wrap mt-1 flex h-full w-full justify-center py-2">
-                            <a aria-label="github" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-gray-400 bg-gray-500" target="_blank" href="https://github.com/shinykiwi" rel="noopener noreferrer">G</a>
-                            <a aria-label="linkedin" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-indigo-400 bg-indigo-500" target="_blank" href="https://github.com/shinykiwi" rel="noopener noreferrer">L</a>
-                            <a aria-label="twitter" class="flex h-10 w-10 items-center justify-center rounded-lg bg-opacity-25 text-blue-400 bg-blue-500" target="_blank" href="https://github.com/shinykiwi" rel="noopener noreferrer">T</a>
-                        </div>
+
                         <div class="w-full">
-                            <div class="flex flex-wrap items-center justify-center text-center">
-                                <div class="hidden w-full lg:block">
-                                    <h1 class="text-2xl font-semibold text-white">
-                                        "Kira "
-                                        <span class="text-sm">(shinykiwi)</span>
-                                    </h1>
-                                </div>
-                                <div class="block flex-col font-semibold text-white">
+                            <div class="flex flex-wrap items-center">
+                                <div class="flex flex-wrap items-center font-semibold text-white">
                                     <h1 class="text-3xl">Kira</h1>
-                                    <h2 class="text-sm">(shinykiwi)</h2>
+                                    <h2 class="text-sm mx-2">(shinykiwi)</h2>
                                 </div>
                                 <div class="w-full py-1">
                                     <span class="text-sm text-indigo-400">
@@ -65,15 +66,121 @@
                         <div class="w-full pt-4">
                             <div class="flex flex-wrap max-w-screen-lg gap-2 mx-auto">
                                 <div class="flex items-center justify-center h-6 px-2 text-xs font-semibold uppercase rounded-full bg-yellow-500/25 text-yellow-400">
-                                    node.js
+                                    tailwind.css
+                                </div>
+                                <div class="flex items-center justify-center h-6 px-2 text-xs font-semibold uppercase rounded-full bg-green-500/25 text-green-400">
+                                    react
+                                </div>
+                            </div>
+                            <div class="max-w-screen-lg pt-4 mx-auto">
+                                <div class="grid w-full grid-cols-1 gap-3 md:grid-cols-2">
+                                    <div class="flex flex-col w-full px-4 py-4 border bg-gray-900 border-gray-800 rounded-md bg-card transition duration-100 transform shadow hover:-translate-y-1 hover:border-indigo-800/80">
+                                        <a href="https://github.com/shinykiwi/cgd-bot" target="_blank" rel="noreferrer">
+                                            <div class="flex w-full">
+                                                <h1 class="flex items-center font-semibold text-white">CGD bot
+                                                    <span class="mx-2 select-none rounded-full bg-opacity-25 px-2 text-xs text-emerald-400 bg-emerald-500">
+                                                        Active
+                                                    </span>
+                                                    <img class="mx-1" alt="Node.js" width="16px" height="16px" src="img/node.svg"/>
+                                                </h1>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="pt-1 text-xs text-gray-300">A Discord bot to moderate my student club's growing server, Concordia Game Development. Tools for creating/editing embeds, community interaction & projects, emoji submission and more!</p>
+                                            </div>
+                                        </a>
+                                        <div class="flex items-end justify-end align-bottom">
+                                            <img src="img/cgd.png" alt="CGDLogo" width="48" height="48" class="rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full px-4 py-4 border bg-gray-900 border-gray-800 rounded-md bg-card transition duration-100 transform shadow hover:-translate-y-1 hover:border-indigo-800/80">
+                                        <a href="https://crafty.gg" target="_blank" rel="noreferrer">
+                                            <div class="flex w-full">
+                                                <h1 class="flex items-center font-semibold text-white">Synthesia RPG
+                                                    <span class="mx-2 select-none rounded-full bg-opacity-25 px-2 text-xs text-emerald-400 bg-emerald-500">
+                                                        Active
+                                                    </span>
+                                                    <img class="mx-1" alt="Node.js" width="16px" height="16px" src="img/node.svg"/>
+                                                </h1>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="pt-1 text-xs text-gray-300">All-in-one Minecraft stop for Servers, Skins, Players, News & a lot more!</p>
+                                            </div>
+                                        </a>
+                                        <div class="flex items-end justify-end align-bottom">
+                                            <img src="img/4bit.png" alt="4bitLogo" width="48" height="48" class="rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap w-full px-4 py-4 border bg-gray-900 border-gray-800 rounded-md bg-card transition duration-100 transform shadow hover:-translate-y-1 hover:border-indigo-800/80">
+                                        <a href="https://crafty.gg" target="_blank" rel="noreferrer">
+                                            <div class="flex w-full">
+                                                <h1 class="flex items-center font-semibold text-white">crafty.gg
+                                                    <span class="mx-2 select-none rounded-full bg-opacity-25 px-2 text-xs text-emerald-400 bg-emerald-500">
+                                                        Active
+                                                    </span>
+                                                    <img class="mx-1" alt="Node.js" width="16px" height="16px" src="img/node.svg"/>
+                                                </h1>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="pt-1 text-xs text-gray-300">All-in-one Minecraft stop for Servers, Skins, Players, News & a lot more!</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-wrap w-full px-4 py-4 border bg-gray-900 border-gray-800 rounded-md bg-card transition duration-100 transform shadow hover:-translate-y-1 hover:border-indigo-800/80">
+                                        <a href="https://crafty.gg" target="_blank" rel="noreferrer">
+                                            <div class="flex w-full">
+                                                <h1 class="flex items-center font-semibold text-white">crafty.gg
+                                                    <span class="mx-2 select-none rounded-full bg-opacity-25 px-2 text-xs text-emerald-400 bg-emerald-500">
+                                                        Active
+                                                    </span>
+                                                    <img class="mx-1" alt="Node.js" width="16px" height="16px" src="img/node.svg"/>
+                                                </h1>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="pt-1 text-xs text-gray-300">All-in-one Minecraft stop for Servers, Skins, Players, News & a lot more!</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
+            <div class="mb-5 px-5">
+                <h2 class="text-2xl font-extrabold leading-9 tracking-tight text-gray-100">Other Projects</h2>
+                <ul class="pt-2, list-disc list-inside">
+                    <li>
+                        <a href="https://smartlockers.roberto.gr" rel="noreferrer" target="_blank">
+                            Smart Lockers - A map with smart lockers from various companies in Greece.
+                        </a>
+                        <img src="img/external.svg" width="24" height="24" class="mx-2 inline-block" alt="External Link">
+                    </li>
+                    <li>
+                        <a href="https://smartlockers.roberto.gr" rel="noreferrer" target="_blank">
+                            Smart Lockers - A map with smart lockers from various companies in Greece.
+                        </a>
+                        <img src="img/external.svg" width="24" height="24" class="mx-2 inline-block" alt="External Link">
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-5 px-5">
+                <h2 class="text-2xl font-extrabold leading-9 tracking-tight text-gray-100">Resources</h2>
+                <ul class="pt-2, list-disc list-inside">
+                    <li>
+                        <a href="https://smartlockers.roberto.gr" rel="noreferrer" target="_blank">
+                            Smart Lockers - A map with smart lockers from various companies in Greece.
+                        </a>
+                        <img src="img/external.svg" width="24" height="24" class="mx-2 inline-block" alt="External Link">
+                    </li>
+                    <li>
+                        <a href="https://smartlockers.roberto.gr" rel="noreferrer" target="_blank">
+                            Smart Lockers - A map with smart lockers from various companies in Greece.
+                        </a>
+                        <img src="img/external.svg" width="24" height="24" class="mx-2 inline-block" alt="External Link">
+                    </li>
+                </ul>
+            </div>
         </main>
     </div>
-
 </body>
 </html>
