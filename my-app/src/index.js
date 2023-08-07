@@ -7,7 +7,9 @@ import {
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
+import Code from "./routes/code";
+
+
 
 const router = createBrowserRouter([
     {
@@ -17,7 +19,19 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "contacts/:contactId",
-                element: <Contact />,
+                element: <Code />,
+            },
+            {
+                path: "code",
+                element: <Code/>
+            },
+            {
+                path: "art",
+                element: <Code/>
+            },
+            {
+                path: "updates",
+                element: <Code/>
             },
         ],
     },
