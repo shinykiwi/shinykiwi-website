@@ -8,6 +8,7 @@ import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Code from "./routes/code";
+import Art from "./routes/art";
 
 
 
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "art",
-                element: <Code/>
+                element: <Art/>
             },
             {
                 path: "updates",

@@ -114,12 +114,14 @@ form[action$="destroy"] button {
 }
 
 #sidebar {
+
   width: 22rem;
+  height: 100%;
   background-color: #f7f7f7;
   border-right: solid 1px #e3e3e3;
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
 }
 
 #sidebar > * {
@@ -369,7 +371,8 @@ i {
 
 #code p {
   margin: 0;
-  padding:0
+  padding:0;
+  font-size: 14px;
 }
 
 .tag{
@@ -380,4 +383,18 @@ i {
     padding-right: .5rem;
     padding-left: .5rem;
     border-radius: .7rem;
+    height: 100%;
+}
+
+.art-card{
+  flex-grow: 1;
+  opacity: 0;
+  padding: 1rem;
+  color: white;
+  height: 100%;
+}
+
+.art-card:hover{
+  opacity: 75%;
+  background-color: black;
 }
