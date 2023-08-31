@@ -21,34 +21,71 @@ export default function BasicModal(props) {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    return (
-        <div>
-            <button onClick={handleOpen}>View</button>
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="open-modal"
-                aria-describedby="open-description"
-            >
-                <Box sx={style}>
-                    <div>
-                        <img src={require(`./routes/art/${props.image}`)} alt={props.title} className={'image'}/>
-                    </div>
-
-                    <div style={{display: "flex"}}>
-                        <div style={{marginRight: "2rem", }}>
-                            <h3 style={{marginBottom: 0}}>
-                                <em>{props.title}</em>
-                            </h3>
-                            <p style={{margin: 0}}>{props.year}</p>
-                        </div>
+    if (props.link){
+        return (
+            <div>
+                <button onClick={handleOpen}>View</button>
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="open-modal"
+                    aria-describedby="open-description"
+                >
+                    <Box sx={style}>
                         <div>
-                            <p >{props.description}</p>
+                            <img src={require(`./routes/art/${props.image}`)} alt={props.title} className={'image'}/>
                         </div>
-                    </div>
 
-                </Box>
-            </Modal>
-        </div>
-    );
+                        <div style={{display: "flex"}}>
+                            <div style={{marginRight: "2rem", }}>
+                                <h3 style={{marginBottom: 0}}>
+                                    <em>{props.title}</em>
+                                </h3>
+                                <p style={{margin: 0}}>{props.year}</p>
+                            </div>
+                            <div>
+                                <p >{props.description}</p>
+                                <a href={props.link} target={'_blank'}><p>See more</p></a>
+                            </div>
+                        </div>
+
+                    </Box>
+                </Modal>
+            </div>
+        );
+
+    }
+    else{
+        return (
+            <div>
+                <button onClick={handleOpen}>View</button>
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="open-modal"
+                    aria-describedby="open-description"
+                >
+                    <Box sx={style}>
+                        <div>
+                            <img src={require(`./routes/art/${props.image}`)} alt={props.title} className={'image'}/>
+                        </div>
+
+                        <div style={{display: "flex"}}>
+                            <div style={{marginRight: "2rem", }}>
+                                <h3 style={{marginBottom: 0}}>
+                                    <em>{props.title}</em>
+                                </h3>
+                                <p style={{margin: 0}}>{props.year}</p>
+                            </div>
+                            <div>
+                                <p >{props.description}</p>
+                            </div>
+                        </div>
+
+                    </Box>
+                </Modal>
+            </div>
+        );
+    }
+
 }

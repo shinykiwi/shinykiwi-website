@@ -1,112 +1,87 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
-import TextMobileStepper from "../TextMobileStepper";
+import BasicModal from "../BasicModal";
+const containerSpacing = 2;
+const xs = 12;
+const md = 6;
+const lg = 3;
 
 
 
 
 export default function Code() {
 
-    const projects = [
+    const gameJams = [
         {
             id: '1',
             title: 'Just a Day in 1347',
-            description: 'My solo submission for the Montreal Game Jam 2023. You are tasked by the University of Paris medical faculty, where you work, to help contain the spread of the plague in a nearby town. Fight the poison air beasts that have been spreading the plague and save the town!',
-            image: '1347game.png'
+            year: '2023',
+            description: 'My solo submission for the Montreal Game Jam 2023. Made in Godot.',
+            image: '1347gameplay.png',
+            link: 'https://shinykiwi.itch.io/average-day-in-1347',
         },
         {
             id: '2',
-            title: 'Synthesia RPG',
-            description: 'A Discord-based roleplaying game set in the realm of Synthesia! Hunt, fish, mine and charm your way around the land. Collect resources, upgrade your gear and customize your character in this immersive fantasy RPG!',
-            image: 'galaxy_background.jpeg'
+            title: 'Felt Alone So I Went for a Walk',
+            year: '2022',
+            description: 'Our submission for the 2022 CGD Jam. Made in Unity.',
+            image: 'feltalonegameplay.png',
+            link: 'https://shinykiwi.itch.io/felt-alone-so-i-went-for-a-walk'
         },
         {
             id: '3',
-            title: 'Felt Alone So I Went for a Walk',
-            description: 'Our submission for the 2022 CGD Jam. It\'s a game about feeling better and reminiscing. Take a walk through the forest, discover your past and keep your flame close! Take the time to explore and ponder what there once was and was not in this narrative (short & unfinished) game. "',
-            image: 'feltalone.png'
+            title: 'Duality of Souls',
+            year: '2022',
+            description: 'The 1st place game at the Montreal Global Game Jam 2022 site. Made in Godot.',
+            image: 'dualitysoulsgameplay.png',
+            link: 'https://shinykiwi.itch.io/duality-of-souls'
         },
         {
             id: '4',
-            title: 'Duality of Souls',
-            description: 'The 1st place game at the Montreal Global Game Jam 2022 site. You play as two souls, torn into different dimensions. Make your way through the castle together, and remember that what you see in one dimension may not exist in the other!',
-            image: 'dualityofsouls.png'
-        },
-        {
-            id: '5',
             title: 'Energy Bop',
-            description: 'My first solo submission, where I created a rhythm game for the Go Godot2 Jam. You play a busy student whose energy is critically dropping all the time. Grab energy treats and smash enemies to get through the day! This was somewhat unfinished, though all art, code and music was done by me.',
-            image: 'energybop.png'
-        },
-        {
-            id: '6',
-            title: 'Bit Pass: Password React App',
-            description: 'Our submission for Conuhacks 2023, based on the CSSE cybersecurity challenger. The app can analyze passwords people currently use, show them how different augmentations to that password increase crack times and overall security, and generate brand new and complex passwords based on their security selections.',
-            image: 'bitpass.jpg'
-        },
-        {
-            id: '7',
-            title: 'Daily Express Site',
-            description: 'An interactive newspaper from the 1950s with songs from the era. Flip between the songs and watch the newspaper adpat to the current events of the song\'s release date. This was my final project for the course CART212: Creating Computing and Network Culture.',
-            image: 'dailyexpress.png'
+            year: '2021',
+            description: 'My first solo submission, where I created a rhythm game for the Go Godot2 Jam. Made in Godot.',
+            image: 'energybopgameplay.png',
+            link: 'https://shinykiwi.itch.io/energy-b0p'
         },
 
     ];
 
 
+
     return (
-        <div id="code">
-               <Container maxWidth='xl'>
-                   <h1>Games</h1>
-                   <h2>Game Jams</h2>
-                   <div >
-                       <div style={{margin: '1rem'}}>
-                       <iframe frameBorder="0"
-                               src="https://itch.io/embed/2044333?border_width=3&amp;bg_color=8b584e&amp;fg_color=ffffff&amp;link_color=faac5b&amp;border_color=8b584e"
-                               width="556" height="171"><a href="https://shinykiwi.itch.io/average-day-in-1347">Just a Day
-                           in 1347 by shinykiwi</a></iframe>
-                       </div>
-                       <div style={{margin: '1rem'}}>
-                       <iframe frameBorder="0"
-                               src="https://itch.io/embed/1748918?border_width=3&amp;bg_color=9b88ee&amp;fg_color=030311&amp;link_color=f2e0a7&amp;border_color=9b88ee"
-                               width="556" height="171"><a href="https://shinykiwi.itch.io/felt-alone-so-i-went-for-a-walk">Felt
-                           alone, so I went for a walk by shinykiwi, PipeFlowWizard, tuanabicakci</a></iframe>
-                       </div>
-                       <div style={{margin: '1rem'}}>
-                       <iframe frameBorder="0"
-                               src="https://itch.io/embed/1377568?border_width=3&amp;bg_color=0d0920&amp;fg_color=fae0fb&amp;link_color=dc3f6e&amp;border_color=0d0920"
-                               width="552" height="167"><a href="https://shinykiwi.itch.io/duality-of-souls">Duality of
-                           Souls (GGJ 2022) by shinykiwi</a></iframe>
-                       </div>
-                       <div style={{margin: '1rem'}}>
-                       <iframe frameBorder="0"
-                               src="https://itch.io/embed/1299804?border_width=3&amp;bg_color=8823b1&amp;fg_color=ffffff&amp;link_color=defe8c&amp;border_color=8823b1"
-                               width="556" height="171"><a href="https://shinykiwi.itch.io/energy-b0p">Energy Bop by
-                           shinykiwi</a></iframe>
-                       </div>
-                   </div>
+        <div id="art">
+            <Container maxWidth='lg'>
+                <h1>My Work</h1>
+
+                <h2>Game Jams</h2>
+
+                <Grid container spacing={containerSpacing}>
+                    {gameJams.map((a) => (
+                        <Grid wrap="nowrap" item zeroMinWidth xs={xs} md={md} lg={lg} key={a.id} >
+                            <div className="gallery">
+                                <div className={'container'}>
+                                    <img src={require(`./art/${a.image}`)} alt="Cinque Terre" width="600" height="400" className='image'/>
+                                    <div className="overlay">
+                                        <div className="text"><strong><em>{a.title}</em></strong><br/>{a.year}</div>
+                                        <BasicModal title={a.title} year={a.year} image={a.image} description={a.description} link={a.link}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Grid>
+                    ))}
+                </Grid>
 
 
 
 
-                   {/*<div>*/}
-                   {/*    {projects.map((project) => (*/}
 
-                   {/*        <div style={{display: 'flex'}}>*/}
-                   {/*            <img src={require(`./img/${project.image}`)} width={600} height={400}/>*/}
-                   {/*            <p>This is a description.</p>*/}
-                   {/*        </div>*/}
-                   {/*    ))}*/}
 
-                   {/*</div>*/}
+                <div style={{height: '10rem'}}>
 
-               </Container>
+                </div>
+            </Container>
 
 
         </div>
