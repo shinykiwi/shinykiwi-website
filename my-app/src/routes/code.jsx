@@ -6,6 +6,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import TextMobileStepper from "../TextMobileStepper";
+
 
 
 
@@ -61,41 +63,49 @@ export default function Code() {
     return (
         <div id="code">
                <Container maxWidth='xl'>
-                   <Grid container spacing={4}>
-                       {projects.map((project) => (
-                           <Grid wrap="nowrap" item zeroMinWidth xs={12} md={6} lg={4} key={project.id} >
-                               <Link href={'/'} underline={'none'}>
-                                   <Card
-                                       sx={{color:'#300f0a', backgroundColor: '#e3e3e3' }}
-                                   >
-                                       <CardMedia
-                                           component="div"
-                                           sx={{
-                                               // 16:9
-                                               pt: '56.25%',
-                                           }}
-                                           image={require(`./img/${project.image}`)}
-                                       />
-                                       <CardContent sx={{ flexGrow: 1,  }}>
-                                           <div style={{display: 'flex'}}>
-                                               <h2 >
-                                                   {project.title}
-                                               </h2>
-                                               <div className={'tag'}>
-                                                   tag
-                                               </div>
-                                           </div>
+                   <h1>Games</h1>
+                   <h2>Game Jams</h2>
+                   <div >
+                       <div style={{margin: '1rem'}}>
+                       <iframe frameBorder="0"
+                               src="https://itch.io/embed/2044333?border_width=3&amp;bg_color=8b584e&amp;fg_color=ffffff&amp;link_color=faac5b&amp;border_color=8b584e"
+                               width="556" height="171"><a href="https://shinykiwi.itch.io/average-day-in-1347">Just a Day
+                           in 1347 by shinykiwi</a></iframe>
+                       </div>
+                       <div style={{margin: '1rem'}}>
+                       <iframe frameBorder="0"
+                               src="https://itch.io/embed/1748918?border_width=3&amp;bg_color=9b88ee&amp;fg_color=030311&amp;link_color=f2e0a7&amp;border_color=9b88ee"
+                               width="556" height="171"><a href="https://shinykiwi.itch.io/felt-alone-so-i-went-for-a-walk">Felt
+                           alone, so I went for a walk by shinykiwi, PipeFlowWizard, tuanabicakci</a></iframe>
+                       </div>
+                       <div style={{margin: '1rem'}}>
+                       <iframe frameBorder="0"
+                               src="https://itch.io/embed/1377568?border_width=3&amp;bg_color=0d0920&amp;fg_color=fae0fb&amp;link_color=dc3f6e&amp;border_color=0d0920"
+                               width="552" height="167"><a href="https://shinykiwi.itch.io/duality-of-souls">Duality of
+                           Souls (GGJ 2022) by shinykiwi</a></iframe>
+                       </div>
+                       <div style={{margin: '1rem'}}>
+                       <iframe frameBorder="0"
+                               src="https://itch.io/embed/1299804?border_width=3&amp;bg_color=8823b1&amp;fg_color=ffffff&amp;link_color=defe8c&amp;border_color=8823b1"
+                               width="556" height="171"><a href="https://shinykiwi.itch.io/energy-b0p">Energy Bop by
+                           shinykiwi</a></iframe>
+                       </div>
+                   </div>
 
-                                           <p>
-                                               {project.description}
-                                           </p>
-                                       </CardContent>
-                                   </Card>
-                               </Link>
 
-                           </Grid>
-                       ))}
-                   </Grid>
+
+
+                   {/*<div>*/}
+                   {/*    {projects.map((project) => (*/}
+
+                   {/*        <div style={{display: 'flex'}}>*/}
+                   {/*            <img src={require(`./img/${project.image}`)} width={600} height={400}/>*/}
+                   {/*            <p>This is a description.</p>*/}
+                   {/*        </div>*/}
+                   {/*    ))}*/}
+
+                   {/*</div>*/}
+
                </Container>
 
 

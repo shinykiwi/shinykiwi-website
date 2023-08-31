@@ -6,63 +6,289 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-import {ImageList, ImageListItem} from "@mui/material";
+import {Box, ImageList, ImageListItem} from "@mui/material";
+import BasicModal from "../BasicModal";
 
+const containerSpacing = 2;
+const xs = 12;
+const md = 6;
+const lg = 3;
 
 
 export default function Art() {
 
-    const projects = [
+    const pixelArt = [
         {
             id: '1',
-            title: 'Just a Day in 1347',
-            description: 'My solo submission for the Montreal Game Jam 2023. You are tasked by the University of Paris medical faculty, where you work, to help contain the spread of the plague in a nearby town. Fight the poison air beasts that have been spreading the plague and save the town!',
-            image: '1347game.png'
+            title: 'Medieval Pixel Galaxy',
+            year: '2022',
+            image: 'medievalart.png',
+            description: 'Isometric pixel art, inspired by the song Pixel Galaxy by Snail\'s House.'
         },
         {
             id: '2',
-            title: 'Synthesia RPG',
-            description: 'A Discord-based roleplaying game set in the realm of Synthesia! Hunt, fish, mine and charm your way around the land. Collect resources, upgrade your gear and customize your character in this immersive fantasy RPG!',
-            image: 'galaxy_background.jpeg'
+            title: 'PC-98 Style',
+            year: '2021',
+            image: 'green-girl.png',
+            description: 'Used a gameboy palette, in the style of PC-98.'
         },
         {
             id: '3',
-            title: 'Felt Alone So I Went for a Walk',
-            description: 'Our submission for the 2022 CGD Jam. It\'s a game about feeling better and reminiscing. Take a walk through the forest, discover your past and keep your flame close! Take the time to explore and ponder what there once was and was not in this narrative (short & unfinished) game. "',
-            image: 'feltalone.png'
+            title: 'Goose, Sans and the Knights',
+            year: '2021',
+            image: 'indie-pixel.png',
+            description: 'Some indie favourites! Commission work.'
         },
         {
             id: '4',
-            title: 'Duality of Souls',
-            description: 'The 1st place game at the Montreal Global Game Jam 2022 site. You play as two souls, torn into different dimensions. Make your way through the castle together, and remember that what you see in one dimension may not exist in the other!',
-            image: 'dualityofsouls.png'
+            title: 'CocoJam Key Art',
+            year: '2021',
+            image: 'cocojam-pixel.png',
+            description: 'The key art for a game jam poster. Commission work.'
         },
         {
             id: '5',
-            title: 'Energy Bop',
-            description: 'My first solo submission, where I created a rhythm game for the Go Godot2 Jam. You play a busy student whose energy is critically dropping all the time. Grab energy treats and smash enemies to get through the day! This was somewhat unfinished, though all art, code and music was done by me.',
-            image: 'energybop.png'
+            title: 'Raiden Shogun',
+            year: '2022',
+            image: 'raiden.png',
+            description: 'Raiden Shogun from Genshin Impact portrait. Size 64x.'
         },
         {
             id: '6',
-            title: 'Bit Pass: Password React App',
-            description: 'Our submission for Conuhacks 2023, based on the CSSE cybersecurity challenger. The app can analyze passwords people currently use, show them how different augmentations to that password increase crack times and overall security, and generate brand new and complex passwords based on their security selections.',
-            image: 'bitpass.jpg'
+            title: 'Waterfall Cloak for Badlion Client',
+            year: '2022',
+            image: 'cape-waterfall.gif',
+            description: 'Minecraft scenery with a waterfall for an in-game cosmetic. Commission work.'
         },
         {
             id: '7',
-            title: 'Daily Express Site',
-            description: 'An interactive newspaper from the 1950s with songs from the era. Flip between the songs and watch the newspaper adpat to the current events of the song\'s release date. This was my final project for the course CART212: Creating Computing and Network Culture.',
-            image: 'dailyexpress.png'
+            title: 'Winter Cloak for Badlion Client',
+            year: '2022',
+            image: 'cape-winter.gif',
+            description: 'A cozy winter cabin scene for an in-game cosmetic. Commission work.'
+        },
+        {
+            id: '8',
+            title: 'Flower Cloak for Badlion Client',
+            year: '2023',
+            image: 'cape-flower.gif',
+            description: 'A spring-themed flower in-game cosmetic. Commission work.'
+        },
+        {
+            id: '9',
+            title: 'Landscape Cloak for Badlion Client',
+            year: '2022',
+            image: 'cape-water.gif',
+            description: 'Waterfall landscape in-game cosmetic. Commission work.'
+        },
+
+
+    ];
+
+    const threeDArt = [
+        {
+            id: '1',
+            title: 'Sushi Flowers',
+            year: '2020',
+            image: 'sushi-plant.png',
+            description: 'Surrealism piece done in Blender.'
+        },
+        {
+            id: '2',
+            title: 'Potion of Fortune',
+            year: '2020',
+            image: 'potion.png',
+            description: 'A mysterious fantasy potion, done in Blender.'
+        },
+        {
+            id: '3',
+            title: 'Morning View',
+            year: '2020',
+            image: 'morning-view.png',
+            description: 'Experimenting with cartoony/anime black outlines in Blender.'
+        },
+
+    ];
+
+    const illustrations = [
+        {
+            id: '1',
+            title: 'SignaturedX MC',
+            year: '2022',
+            image: 'sig.png',
+            description: 'A friend\'s Minecraft skin illustration.'
+        },
+        {
+            id: '2',
+            title: 'Artfight 2022 Character',
+            year: '2022',
+            image: 'artfight-char.jpeg',
+            description: 'A character drawn during the 2022 Artfight. Not my OC.'
+        },
+        {
+            id: '3',
+            title: 'Portrait of Jacob',
+            year: '2022',
+            image: 'jacob-bday.png',
+            description: 'A portrait of a friend for his birthday.'
+        },
+        {
+            id: '4',
+            title: 'The Librarian',
+            year: '2021',
+            image: 'character-design.png',
+            description: 'Character design practice for a game idea I had.'
+        },
+        {
+            id: '4',
+            title: 'Diana',
+            year: '2023',
+            image: 'diana.PNG',
+            description: 'Diana, from Hypixel Skyblock.'
+        },
+
+    ];
+    const courseWork = [
+        {
+            id: '1',
+            title: '1950\'s Album Cover (Front)',
+            course: 'CART 214',
+            year: '2021',
+            image: 'frontcover.png',
+            description: 'Diana, from Hypixel Skyblock.',
+            link: '/'
+        },
+        {
+            id: '2',
+            title: '1950\'s Album Cover (Back)',
+            course: 'CART 214',
+            year: '2021',
+            image: 'backcover.png',
+            description: 'Diana, from Hypixel Skyblock.',
+            link: '/'
+        },
+        {
+            id: '3',
+            title: 'Randolph\'s Radios',
+            course: 'CART 211',
+            year: '2022',
+            image: 'randolph211.png',
+            description: 'Diana, from Hypixel Skyblock.',
+            link: '/'
+        },
+        {
+            id: '4',
+            title: 'The Daily Express',
+            course: 'CART 211',
+            year: '2022',
+            image: 'dailyexpress.png',
+            description: 'Diana, from Hypixel Skyblock.',
+            link: 'https://hybrid.concordia.ca/K_FOUNT/'
+        },
+        {
+            id: '5',
+            title: 'It\'s All Over But the Crying',
+            course: 'CART 212',
+            year: '2023',
+            image: 'final-212.png',
+            description: 'Diana, from Hypixel Skyblock.',
+            link: 'https://www.youtube.com/watch?v=GtaucbDoVLY'
+        },
+        {
+            id: '6',
+            title: 'Wunderkammer',
+            course: 'CART 212',
+            year: '2023',
+            image: 'wunderkammer-preview.png',
+            description: 'Diana, from Hypixel Skyblock.',
+            link: 'https://www.youtube.com/watch?v=0yAy4N6wAKQ'
         },
 
     ];
 
 
+
+
     return (
         <div id="art">
-            <Container maxWidth='xl'>
+            <Container maxWidth='lg'>
+                <h1>My Work</h1>
+                <h2>Pixel Art</h2>
 
+                <Grid container spacing={containerSpacing}>
+                    {pixelArt.map((a) => (
+                        <Grid wrap="nowrap" item zeroMinWidth xs={xs} md={md} lg={lg} key={a.id} >
+                            <div className="gallery">
+                                    <div className={'container'}>
+                                        <img src={require(`./art/${a.image}`)} alt="Cinque Terre" width="600" height="400" className='image'/>
+                                        <div className="overlay">
+                                            <div className="text"><strong><em>{a.title}</em></strong><br/>{a.year}</div>
+                                            <BasicModal title={a.title} year={a.year} image={a.image} description={a.description}/>
+                                        </div>
+                                    </div>
+                            </div>
+                        </Grid>
+                    ))}
+                </Grid>
+
+                <h2>3D Art</h2>
+
+                <Grid container spacing={containerSpacing}>
+                    {threeDArt.map((a) => (
+                        <Grid wrap="nowrap" item zeroMinWidth xs={xs} md={md} lg={lg} key={a.id} >
+                            <div className="gallery">
+                                <div className={'container'}>
+                                    <img src={require(`./art/${a.image}`)} alt="Cinque Terre" width="600" height="400" className='image'/>
+                                    <div className="overlay">
+                                        <div className="text"><strong><em>{a.title}</em></strong><br/>{a.year}</div>
+                                        <BasicModal title={a.title} year={a.year} image={a.image} description={a.description}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Grid>
+                    ))}
+                </Grid>
+
+                <h2>Illustrations</h2>
+
+                <Grid container spacing={containerSpacing}>
+                    {illustrations.map((a) => (
+                        <Grid wrap="nowrap" item zeroMinWidth xs={xs} md={md} lg={lg} key={a.id} >
+                            <div className="gallery">
+                                <div className={'container'}>
+                                    <img src={require(`./art/${a.image}`)} alt="Cinque Terre" width="600" height="400" className='image'/>
+                                    <div className="overlay">
+                                        <div className="text"><strong><em>{a.title}</em></strong><br/>{a.year}</div>
+                                        <BasicModal title={a.title} year={a.year} image={a.image} description={a.description}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Grid>
+                    ))}
+                </Grid>
+
+                <h2>Course Work</h2>
+
+                <Grid container spacing={containerSpacing}>
+                    {courseWork.map((a) => (
+                        <Grid wrap="nowrap" item zeroMinWidth xs={xs} md={md} lg={lg} key={a.id} >
+                            <div className="gallery">
+                                <div className={'container'}>
+                                    <img src={require(`./art/${a.image}`)} alt="Cinque Terre" width="600" height="400" className='image'/>
+                                    <div className="overlay">
+                                        <div className="text"><strong><em>{a.title}</em></strong><br/>{a.course}<br/>{a.year}</div>
+                                        <BasicModal title={a.title} year={a.year} image={a.image} description={a.description}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Grid>
+                    ))}
+                </Grid>
+
+
+                <div style={{height: '10rem'}}>
+
+                </div>
             </Container>
 
 
