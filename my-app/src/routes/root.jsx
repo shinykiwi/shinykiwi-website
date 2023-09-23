@@ -3,48 +3,18 @@ import CodeIcon from '@mui/icons-material/Code';
 import HomeIcon from '@mui/icons-material/Home';
 import BrushIcon from '@mui/icons-material/Brush';
 import ArticleIcon from '@mui/icons-material/Article';
+import PersistentDrawerLeft from "../PersistentDrawer";
+import * as React from "react";
 
 export default function Root() {
     return (
         <>
-            <div id="sidebar">
-                <nav>
+            <PersistentDrawerLeft>
 
-                    <div>
-                        <img className={'pfp'} src='https://shinykiwi.dev/img/profile-pic.JPG' alt={'profile'}/>
+            </PersistentDrawerLeft>
 
-                    </div>
-                    <div>
-                        <h1>Kira Fountain</h1>
-                        <p><em>Gamedev student based in Montreal.</em></p>
-                    </div>
-                    <ul>
-                        <li>
-
-                            <a href={`/`}>
-                                <HomeIcon color={'disabled'}/>
-                                Home</a>
-                        </li>
-                        <li>
-
-                            <a href={`/code`}>
-                                <CodeIcon color={'disabled'}/>Code</a>
-                        </li>
-                        <li>
-                            <a href={`/art`}>
-                                <BrushIcon color={'disabled'}/>
-                                Art</a>
-                        </li>
-                        <li>
-                            <a href={`/updates`}>
-                                <ArticleIcon color={'disabled'}/>
-                                Updates</a>
-                        </li>
-
-                    </ul>
-                </nav>
-            </div>
             <div id="detail">
+                <div style={{marginTop: "5rem"}}></div>
                 <Outlet/>
 
             </div>

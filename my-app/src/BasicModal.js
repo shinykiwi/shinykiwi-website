@@ -21,7 +21,7 @@ export default function BasicModal(props) {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    if (props.link){
+    if ((props.link) && (props.link !== "/")){
         return (
             <div>
                 <button onClick={handleOpen}>View</button>

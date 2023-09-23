@@ -84,7 +84,6 @@ export default function Art() {
 
 
     ];
-
     const threeDArt = [
         {
             id: '1',
@@ -109,7 +108,6 @@ export default function Art() {
         },
 
     ];
-
     const illustrations = [
         {
             id: '1',
@@ -155,7 +153,7 @@ export default function Art() {
             course: 'CART 214',
             year: '2021',
             image: 'frontcover.png',
-            description: 'Diana, from Hypixel Skyblock.',
+            description: 'A fictional singer\'s album cover from the 50s. Fallout-themed. 1/2',
             link: '/'
         },
         {
@@ -164,7 +162,7 @@ export default function Art() {
             course: 'CART 214',
             year: '2021',
             image: 'backcover.png',
-            description: 'Diana, from Hypixel Skyblock.',
+            description: 'A fictional singer\'s album back cover from the 50s. Fallout-themed. 2/2',
             link: '/'
         },
         {
@@ -173,7 +171,7 @@ export default function Art() {
             course: 'CART 211',
             year: '2022',
             image: 'randolph211.png',
-            description: 'Diana, from Hypixel Skyblock.',
+            description: 'Randolph, the ethereal radio shop owner.',
             link: '/'
         },
         {
@@ -182,7 +180,7 @@ export default function Art() {
             course: 'CART 211',
             year: '2022',
             image: 'dailyexpress.png',
-            description: 'Diana, from Hypixel Skyblock.',
+            description: 'Interactive newspaper site showcasing popular 50s era songs and the current events surrounding them.',
             link: 'https://hybrid.concordia.ca/K_FOUNT/'
         },
         {
@@ -191,7 +189,7 @@ export default function Art() {
             course: 'CART 212',
             year: '2023',
             image: 'final-212.png',
-            description: 'Diana, from Hypixel Skyblock.',
+            description: 'A short piece about escapism for final project.',
             link: 'https://www.youtube.com/watch?v=GtaucbDoVLY'
         },
         {
@@ -200,7 +198,7 @@ export default function Art() {
             course: 'CART 212',
             year: '2023',
             image: 'wunderkammer-preview.png',
-            description: 'Diana, from Hypixel Skyblock.',
+            description: 'Dark academia inspired short for midterm.',
             link: 'https://www.youtube.com/watch?v=0yAy4N6wAKQ'
         },
 
@@ -211,7 +209,7 @@ export default function Art() {
 
     return (
         <div id="art">
-            <Container maxWidth='lg'>
+            <Container maxWidth={"xl"} >
                 <h1>My Work</h1>
                 <h2>Pixel Art</h2>
 
@@ -277,7 +275,7 @@ export default function Art() {
                                     <img src={require(`./art/${a.image}`)} alt="Cinque Terre" width="600" height="400" className='image'/>
                                     <div className="overlay">
                                         <div className="text"><strong><em>{a.title}</em></strong><br/>{a.course}<br/>{a.year}</div>
-                                        <BasicModal title={a.title} year={a.year} image={a.image} description={a.description}/>
+                                        <BasicModal title={a.title} year={a.year} image={a.image} description={a.description} link={a.link}/>
                                     </div>
                                 </div>
                             </div>
