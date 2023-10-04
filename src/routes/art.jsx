@@ -210,7 +210,7 @@ export default function Art() {
     return (
         <div id="art">
             <Container maxWidth={"xl"} >
-                <h1>My Work</h1>
+                <h1>Art</h1>
                 <h2>Pixel Art</h2>
 
                 <Grid container spacing={containerSpacing}>

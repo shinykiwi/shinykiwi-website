@@ -53,7 +53,7 @@ export default function Code() {
     return (
         <div id="art">
             <Container maxWidth='lg'>
-                <h1>My Work</h1>
+                <h1>Code</h1>
 
                 <h2>Game Jams</h2>
 
