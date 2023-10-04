@@ -10,6 +10,7 @@ import ErrorPage from "./error-page";
 import Code from "./routes/code";
 import Art from "./routes/art";
 import Other from "./routes/other";
+import MiracleDaycare from "./routes/miracle-daycare";
 
 
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
                 path: "other",
                 element: <Other/>
             },
+            {
+                path: "code/miracle-daycare",
+                element: <MiracleDaycare/>
+            }
         ],
     },
 

@@ -91,7 +91,7 @@ export default function PersistentDrawerLeft() {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar position="fixed" elevation="0" open={open}>
-                <Toolbar sx={{backgroundColor: "#576B93"}}>
+                <Toolbar sx={{backgroundColor: "#2e83ff"}}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -101,9 +101,7 @@ export default function PersistentDrawerLeft() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <h4 >
-                        @shinykiwi
-                    </h4>
+
                 </Toolbar>
             </AppBar>
             <Drawer
@@ -130,7 +128,7 @@ export default function PersistentDrawerLeft() {
                     <nav >
 
                         <div>
-                            <img className={'pfp'} src={require(`./routes/art/profile-pic.jpg`)} alt={'profile'}/>
+                            <img className={'pfp'} src={require(`./routes/art/kiralinkedinpic.png`)} alt={'profile'}/>
 
                         </div>
                         <div>

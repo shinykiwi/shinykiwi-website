@@ -210,8 +210,8 @@ export default function Art() {
     return (
         <div id="art">
             <Container maxWidth={"xl"} >
-                <h1>Art</h1>
-                <h2>Pixel Art</h2>
+                <h1>art.</h1>
+                <h2>pixel art</h2>
 
                 <Grid container spacing={containerSpacing}>
                     {pixelArt.map((a) => (
@@ -229,7 +229,7 @@ export default function Art() {
                     ))}
                 </Grid>
 
-                <h2>3D Art</h2>
+                <h2>3D art</h2>
 
                 <Grid container spacing={containerSpacing}>
                     {threeDArt.map((a) => (
@@ -247,7 +247,7 @@ export default function Art() {
                     ))}
                 </Grid>
 
-                <h2>Illustrations</h2>
+                <h2>illustrations</h2>
 
                 <Grid container spacing={containerSpacing}>
                     {illustrations.map((a) => (
@@ -265,7 +265,7 @@ export default function Art() {
                     ))}
                 </Grid>
 
-                <h2>Course Work</h2>
+                <h2>course work</h2>
 
                 <Grid container spacing={containerSpacing}>
                     {courseWork.map((a) => (

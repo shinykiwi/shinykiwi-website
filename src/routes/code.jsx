@@ -2,6 +2,10 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import BasicModal from "../BasicModal";
+import Card from "@mui/material/Card";
+import ResponsiveDrawer from "../ResponsiveDrawer";
+import ProjectDisplay from "./ProjectDisplay";
+
 const containerSpacing = 2;
 const xs = 12;
 const md = 6;
@@ -53,27 +57,9 @@ export default function Code() {
     return (
         <div id="art">
             <Container maxWidth='lg'>
-                <h1>Code</h1>
-
-                <h2>Game Jams</h2>
-
-                <Grid container spacing={containerSpacing}>
-                    {gameJams.map((a) => (
-                        <Grid wrap="nowrap" item zeroMinWidth xs={xs} md={md} lg={lg} key={a.id} >
-                            <div className="gallery">
-                                <div className={'container'}>
-                                    <img src={require(`./art/${a.image}`)} alt="Cinque Terre" width="600" height="400" className='image'/>
-                                    <div className="overlay">
-                                        <div className="text"><strong><em>{a.title}</em></strong><br/>{a.year}</div>
-                                        <BasicModal title={a.title} year={a.year} image={a.image} description={a.description} link={a.link}/>
-                                    </div>
-                                </div>
-                            </div>
-                        </Grid>
-                    ))}
-                </Grid>
 
 
+                <ProjectDisplay project={"hi"}/>
 
 
 

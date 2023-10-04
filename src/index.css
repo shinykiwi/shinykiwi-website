@@ -504,3 +504,96 @@ div.desc {
 .article a:hover {
   color: black;
 }
+
+#art h1{
+  font-size: 60px;
+}
+
+#art h2{
+  background-color: #FFD8ED;
+}
+
+#art h3{
+  font-size: 20px;
+  margin:0;
+}
+
+.projects{
+  display: flex;
+  margin: 1rem;
+  padding: .5rem;
+
+}
+
+.projects div{
+  padding: .5rem;
+
+}
+
+.projects p{
+
+}
+
+.projects li {
+  margin-top: 1rem;
+  padding: .5rem;
+  list-style-type: none;
+  transition: 0.3s;
+  border-radius: 8px;
+  background-color: rgba(255, 216, 237, 0.47);
+}
+
+.projects li:hover{
+  background-color: #FFD8ED;
+
+  transform: translateY(-5px);
+}
+
+.projects a{
+  color: black;
+  opacity: 75%;
+  text-decoration: none;
+
+}
+
+.projects a:hover {
+  opacity: 100%;
+
+
+}
+
+.projects ul{
+  margin: 0;
+  padding: 0;
+}
+
+.projects-panel{
+  height: 100%;
+  padding: 0;
+
+}
+
+.content-panel{
+
+  margin-left: 2rem;
+
+}
+
+.content-panel h1{
+  border-left: gray 4px solid;
+  font-style: italic;
+  padding-left: 2rem;
+}
+
+.content-panel p {
+  padding-left: 2rem;
+}
+
+.content-panel li{
+  background-color: #e7e7e7;
+  width: 100%;
+}
+
+.content-panel li:hover{
+  background-color: #f6f5f5;;
+}
