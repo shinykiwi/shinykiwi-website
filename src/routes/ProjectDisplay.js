@@ -10,9 +10,6 @@ export default function ProjectDisplay(props) {
                     <ul>
                         <a href={"/code/miracle-daycare"}><li>Miracle Daycare</li></a>
 
-                        <li>
-                            there
-                        </li>
                     </ul>
                 </div>
 

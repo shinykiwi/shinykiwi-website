@@ -59,7 +59,7 @@ export default function Code() {
             <Container maxWidth='lg'>
 
 
-                <ProjectDisplay project={"hi"}/>
+                <ProjectDisplay/>
 
 
 
