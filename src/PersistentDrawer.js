@@ -140,12 +140,6 @@ export default function PersistentDrawerLeft() {
                                 <ul>
                                     <li>
 
-                                        <a href={`/`}>
-                                            <HomeIcon color={'disabled'}/>
-                                            Home</a>
-                                    </li>
-                                    <li>
-
                                         <a href={`/code`}>
                                             <CodeIcon color={'disabled'}/>Code</a>
                                     </li>

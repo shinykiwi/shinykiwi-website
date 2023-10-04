@@ -17,6 +17,8 @@ export default function Root() {
                 <div style={{marginTop: "5rem"}}></div>
                 <Outlet/>
 
+
+
             </div>
         </>
     );
