@@ -3,8 +3,8 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import BasicModal from "../BasicModal";
 import Card from "@mui/material/Card";
-import ResponsiveDrawer from "../ResponsiveDrawer";
-import ProjectDisplay from "./ProjectDisplay";
+
+import ProjectDisplay from "../ProjectDisplay";
 
 const containerSpacing = 2;
 const xs = 12;

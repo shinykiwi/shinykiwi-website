@@ -600,3 +600,9 @@ div.desc {
 .content-panel li:hover{
   background-color: #f6f5f5;;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+

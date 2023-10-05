@@ -1,10 +1,14 @@
 import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import BasicModal from "../BasicModal";
-import Card from "@mui/material/Card";
-import ResponsiveDrawer from "../ResponsiveDrawer";
-import ProjectDisplay from "./ProjectDisplay";
+
+import ImageGallery from "react-image-gallery";
+// import stylesheet if you're not already using CSS @import
+import "react-image-gallery/styles/css/image-gallery.css";
+
+import ProjectDisplay from "../ProjectDisplay";
+
+
 
 const containerSpacing = 2;
 const xs = 12;
@@ -13,6 +17,20 @@ const lg = 3;
 
 
 
+const images = [
+    {
+        original: "https://picsum.photos/id/1018/1000/600/",
+        thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+        original: "https://picsum.photos/id/1015/1000/600/",
+        thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+        original: "https://picsum.photos/id/1019/1000/600/",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+];
 
 export default function MiracleDaycare() {
 
@@ -39,8 +57,20 @@ export default function MiracleDaycare() {
                             </ul>
 
                         </div>
+
+                        <div>
+                            <ImageGallery items={images} showPlayButton={false} showNav={false} slideDuration={200} showFullscreenButton={false}/>
+
+                        </div>
+
+
+
+
+
                     </div>
                 }/>
+
+
 
 
                 <div style={{height: '10rem'}}>
