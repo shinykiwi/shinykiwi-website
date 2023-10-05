@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import ImageGallery from "react-image-gallery";
 // import stylesheet if you're not already using CSS @import
 import "react-image-gallery/styles/css/image-gallery.css";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 import ProjectDisplay from "../ProjectDisplay";
 
@@ -45,24 +46,41 @@ export default function MiracleDaycare() {
                         The game was programmed using blueprints. The game is still in development!</p>
 
 
+                        <div style={{display: "flex"}}>
+                            <div>
+                                <h3>Partner</h3>
+                                <ul>
+                                    <a href={"https://www.linkedin.com/in/tuana-bicakci/"}><li>
+                                        Tuana Bıçakcı (Designer/Programmer)
 
-                        <div>
-                            <h3>Partner</h3>
-                            <ul>
-                                <a href={"https://www.linkedin.com/in/tuana-bicakci/"}><li>
-                                    Tuana Bıçakcı (Designer/Programmer)
+                                    </li></a>
 
-                                </li></a>
+                                </ul>
 
-                            </ul>
+                            </div>
+                            <div>
+                                <h3>Links</h3>
+                                <ul>
+                                    <a href={"https://github.com/shinykiwi/miracle-daycare"}><li>
+                                        <GitHubIcon/>
 
+                                    </li></a>
+
+                                </ul>
+
+                            </div>
                         </div>
+
 
                         <div>
                             <ImageGallery items={images} showPlayButton={false} showNav={false} slideDuration={200} showFullscreenButton={false}/>
 
                         </div>
 
+                        <div>
+                            <h3>Tools</h3>
+                            <p>Unreal Engine 5, current assets from Quixel Bridge. </p>
+                        </div>
 
 
 
