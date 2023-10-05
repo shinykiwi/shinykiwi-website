@@ -19,16 +19,12 @@ const lg = 3;
 
 const images = [
     {
-        original: "https://picsum.photos/id/1018/1000/600/",
-        thumbnail: "https://picsum.photos/id/1018/250/150/",
+        original: "https://cdn.discordapp.com/attachments/883004118749282336/1159305345169104926/image.png?ex=65308a3d&is=651e153d&hm=04f0b7ed8149f2adc0bfeb49f5fcd38f58cb3b013d2c5c9def1692a91ae2a193&",
+        thumbnail: "https://cdn.discordapp.com/attachments/883004118749282336/1159305345169104926/image.png?ex=65308a3d&is=651e153d&hm=04f0b7ed8149f2adc0bfeb49f5fcd38f58cb3b013d2c5c9def1692a91ae2a193&",
     },
     {
-        original: "https://picsum.photos/id/1015/1000/600/",
-        thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-        original: "https://picsum.photos/id/1019/1000/600/",
-        thumbnail: "https://picsum.photos/id/1019/250/150/",
+        original: "https://cdn.discordapp.com/attachments/1120019096935874620/1153031777439469598/image.png?ex=652c2c86&is=6519b786&hm=f09087773082c88fdfafaf513b47a2e953e5e5fce2938c129907dfefb01b21b7&",
+        thumbnail: "https://cdn.discordapp.com/attachments/1120019096935874620/1153031777439469598/image.png?ex=652c2c86&is=6519b786&hm=f09087773082c88fdfafaf513b47a2e953e5e5fce2938c129907dfefb01b21b7&",
     },
 ];
 
@@ -42,9 +38,13 @@ export default function MiracleDaycare() {
                 <ProjectDisplay project={
                     <div >
                         <h1 style={{margin: 0}}>Miracle Daycare</h1>
+                        <h4>July 2023 - Present</h4>
+
                         <p>A first person horror where you play as a thrift store employee, sorting through the donations of a closed down daycare.
                         The design of this game focuses on narrative and environmental storytelling, and was a way for my dev partner and I to learn Unreal Engine 5.
-                        The game was programmed using blueprints.</p>
+                        The game was programmed using blueprints. The game is still in development!</p>
+
+
 
                         <div>
                             <h3>Partner</h3>
