@@ -9,6 +9,7 @@ export default function ProjectDisplay(props) {
                 <div className={"projects-panel"}>
                     <ul>
                         <a href={"/code/miracle-daycare"}><li>Miracle Daycare</li></a>
+                        <a href={"/code/1347-game"}><li>1347 Game</li></a>
 
                     </ul>
                 </div>

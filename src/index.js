@@ -11,6 +11,7 @@ import Code from "./routes/code";
 import Art from "./routes/art";
 import Other from "./routes/other";
 import MiracleDaycare from "./routes/miracle-daycare";
+import MedievalGame from "./routes/1347-game";
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "code/miracle-daycare",
                 element: <MiracleDaycare/>
+            },
+            {
+                path: "code/1347-game",
+                element: <MedievalGame/>
             }
         ],
     },
