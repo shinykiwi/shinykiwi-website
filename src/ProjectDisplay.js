@@ -3,7 +3,6 @@ import * as React from "react";
 export default function ProjectDisplay(props) {
     return (
         <div>
-            <h1>code.</h1>
             <div className={"projects"}>
 
                 <div className={"projects-panel"}>
