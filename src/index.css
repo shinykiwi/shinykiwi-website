@@ -519,8 +519,6 @@ div.desc {
 }
 
 .projects{
-  display: flex;
-  margin: 1rem;
   padding: .5rem;
 
 }
@@ -530,12 +528,13 @@ div.desc {
 
 }
 
-.projects p{
-
+.projects ul{
+  width: max-content;
 }
 
 .projects li {
-  min-width: 5rem;
+
+
   margin-top: 1rem;
   padding: .5rem;
   list-style-type: none;
@@ -578,7 +577,6 @@ div.desc {
 
 .content-panel{
 
-  margin-left: 2rem;
 
 }
 
@@ -586,11 +584,17 @@ div.desc {
   border-left: gray 4px solid;
   font-style: italic;
   padding-left: 2rem;
+  margin-bottom: 1rem;
 }
 
-.content-panel p {
+.content-panel h4{
+  text-transform: uppercase;
+  font-style: normal;
   padding-left: 2rem;
+  color: #818181;
+  margin-bottom: 3rem;
 }
+
 
 .content-panel li{
   background-color: #e7e7e7;
