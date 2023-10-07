@@ -69,6 +69,24 @@ export default function MiracleDaycare() {
                                 </ul>
 
                             </div>
+                            <div className={"tools"}>
+                                <h3>Tools</h3>
+                                <div >
+                                    <ul>
+                                        <li>
+                                            Unreal Engine (blueprints)
+                                        </li>
+                                        <li>Blender</li>
+                                        <li>Quixel MegaScans for temporary assets</li>
+
+                                    </ul>
+
+
+
+                                </div>
+
+
+                            </div>
                         </div>
 
 
@@ -76,14 +94,6 @@ export default function MiracleDaycare() {
                             <ImageGallery items={images} showPlayButton={false} showNav={false} slideDuration={200} showFullscreenButton={false}/>
 
                         </div>
-
-                        <div>
-                            <h3>Tools</h3>
-                            <p>Unreal Engine 5, current assets from Quixel Bridge. </p>
-                        </div>
-
-
-
 
                     </div>
                 }/>
