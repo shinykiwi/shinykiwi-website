@@ -166,7 +166,7 @@ export default function PersistentDrawerLeft() {
                                         <a href={"https://www.instagram.com/pxlkiwi/"}>
                                             <InstagramIcon/>
                                         </a>
-                                        <a href={"https://www.instagram.com/pxlkiwi/"}>
+                                        <a href={"https://www.linkedin.com/in/kira-fountain/"}>
                                             <LinkedInIcon/>
                                         </a>
                                         <a href={"https://github.com/shinykiwi"}>
