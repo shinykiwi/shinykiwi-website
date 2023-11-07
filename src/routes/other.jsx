@@ -7,6 +7,11 @@ import {Accordion, AccordionDetails, AccordionSummary} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+import SkyrimEssay from './pdfs/skyrim-essay.pdf';
+import SkyrimPPT from './pdfs/skyrim-presentation.pdf';
+import IntroToPixelArt from './pdfs/intro-to-pixel-art.pdf';
+import PixelArtForGames from './pdfs/pixelart-for-games.pdf';
+
 export default function Other() {
 
     return(
@@ -33,7 +38,7 @@ export default function Other() {
                                 <div className={"article"}>
                                     <h3>Intro to Pixel Art</h3>
                                     <div >
-                                        <a href={"./pdfs/intro-to-pixel-art.pdf"}>
+                                        <a href={IntroToPixelArt} target={"_blank"}>
 
 
                                             <div className={'container'}>
@@ -55,7 +60,7 @@ export default function Other() {
                                     <h3>Pixel Art for Games</h3>
                                     <div >
 
-                                        <a href={"./pdfs/pixelart-for-games.pdf"}>
+                                        <a href={PixelArtForGames} target={"_blank"}>
                                             <div className={'container'}>
                                                 <img src={require(`./art/pixelartforgames.png`)} alt="Cinque Terre" width="600" height="400" className='image'/>
                                                 <div className="overlay">
@@ -104,11 +109,11 @@ export default function Other() {
                                         <p><strong>Abstract:</strong> <em>The Elder Scrolls V: Skyrim</em> is a 2011 open-world RPG developed by Bethesda Game Studios. It takes place in the province of Skyrim, a cold and mountainous region of the fictional continent of Tamriel. Players take on the role of the "Dragonborn," with the ability to absorb the souls of slain dragons and take on their powers. The game features a vast and detailed world for players to explore with an extensive customizable character system. This allows players to create and play as a wide range of characters, with various races, appearances, voices and skills. The game has been highly praised by critics and recognized for its gameplay successes. I will discuss the theory of neo-medievalism, and how aspects of identity, control, and nostalgia contribute to the lasting success and popularity of Skyrim.
                                         </p>
                                         <p>
-                                            <a href={"./pdfs/skyrim-essay.pdf"}>Read the full essay. </a>
+                                            <a href={SkyrimEssay} target={"_blank"}>Read the full essay. </a>
 
                                         </p>
                                         <p>
-                                            <a href={"./pdfs/skyrim-presentation.pdf"}>See the powerpoint version.</a>
+                                            <a href={SkyrimPPT} target={"_blank"}>See the powerpoint version.</a>
                                         </p>
                                     </div>
                                 </div>
