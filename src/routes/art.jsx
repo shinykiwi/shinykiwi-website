@@ -19,63 +19,72 @@ export default function Art() {
 
     const pixelArt = [
         {
+            id: '0',
+            title: 'FNAF Glamrock',
+            year: '2023',
+            image: 'all4-fnaf.png',
+            description: 'Portraits of the glamrock animatronics from FNAF5.'
+        },
+        {
             id: '1',
             title: 'Medieval Pixel Galaxy',
             year: '2022',
             image: 'medievalart.png',
             description: 'Isometric pixel art, inspired by the song Pixel Galaxy by Snail\'s House.'
         },
+        
         {
-            id: '2',
+            id: '3',
             title: 'PC-98 Style',
             year: '2021',
             image: 'green-girl.png',
             description: 'Used a gameboy palette, in the style of PC-98.'
         },
+
         {
-            id: '3',
+            id: '4',
             title: 'Goose, Sans and the Knights',
             year: '2021',
             image: 'indie-pixel.png',
             description: 'Some indie favourites! Commission work.'
         },
         {
-            id: '4',
+            id: '5',
             title: 'CocoJam Key Art',
             year: '2021',
             image: 'cocojam-pixel.png',
             description: 'The key art for a game jam poster. Commission work.'
         },
         {
-            id: '5',
+            id: '6',
             title: 'Raiden Shogun',
             year: '2022',
             image: 'raiden.png',
             description: 'Raiden Shogun from Genshin Impact portrait. Size 64x.'
         },
         {
-            id: '6',
+            id: '7',
             title: 'Waterfall Cloak for Badlion Client',
             year: '2022',
             image: 'cape-waterfall.gif',
             description: 'Minecraft scenery with a waterfall for an in-game cosmetic. Commission work.'
         },
         {
-            id: '7',
+            id: '8',
             title: 'Winter Cloak for Badlion Client',
             year: '2022',
             image: 'cape-winter.gif',
             description: 'A cozy winter cabin scene for an in-game cosmetic. Commission work.'
         },
         {
-            id: '8',
+            id: '9',
             title: 'Flower Cloak for Badlion Client',
             year: '2023',
             image: 'cape-flower.gif',
             description: 'A spring-themed flower in-game cosmetic. Commission work.'
         },
         {
-            id: '9',
+            id: '10',
             title: 'Landscape Cloak for Badlion Client',
             year: '2022',
             image: 'cape-water.gif',
@@ -201,6 +210,16 @@ export default function Art() {
             description: 'Dark academia inspired short for midterm.',
             link: 'https://www.youtube.com/watch?v=0yAy4N6wAKQ'
         },
+        {
+            id: '7',
+            title: 'Muzen Radio Render',
+            course: 'CART 361',
+            year: '2023',
+            image: 'muzen-render-2023.png',
+            description: 'I did textures, model by our professor Stephane.',
+            link: '/'
+        },
+
 
     ];
 
