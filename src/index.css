@@ -137,7 +137,8 @@ form[action$="destroy"] button {
   display: flex;
   align-items: center;
   margin-bottom: 0;
-  font-family: "More Sugar";
+  color: darkred;
+  font-family: "Spectral ExtraBold";
 
 }
 
@@ -187,7 +188,7 @@ i {
   margin-top: .5rem;
   margin-bottom: 2rem;
   opacity: 75%;
-  font-family: "More Sugar Thin";
+  font-family: "Spectral";
 }
 
 #sidebar li {
