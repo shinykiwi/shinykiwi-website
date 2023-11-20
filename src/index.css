@@ -122,6 +122,7 @@ form[action$="destroy"] button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Spectral;
 
 
 }
@@ -136,6 +137,8 @@ form[action$="destroy"] button {
   display: flex;
   align-items: center;
   margin-bottom: 0;
+  font-family: "More Sugar";
+
 }
 
 
@@ -171,6 +174,9 @@ i {
 }
 
 #sidebar ul {
+  font-family: "More Sugar";
+  text-transform: lowercase;
+  font-size:26px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -181,6 +187,7 @@ i {
   margin-top: .5rem;
   margin-bottom: 2rem;
   opacity: 75%;
+  font-family: "More Sugar Thin";
 }
 
 #sidebar li {
@@ -413,6 +420,7 @@ i {
 div.gallery img {
   width: 100%;
   height: auto;
+
 }
 
 div.desc {
@@ -466,11 +474,13 @@ div.desc {
 
 .overlay {
   position: absolute;
+
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 1.5rem;
+  font-family: "More Sugar Thin";
   display: flex;
   height: 100%;
   width: 100%;
@@ -486,6 +496,7 @@ div.desc {
 .text {
   color: white;
   font-size: 18px;
+
   position: absolute;
   display: inline-block;
   align-self: flex-end;
@@ -506,20 +517,23 @@ div.desc {
 }
 
 #art h1{
-  font-size: 60px;
+  font-size: 70px;
+  font-family: "More Sugar";
 }
 
 #art h2{
   background-color: #FFD8ED;
+  font-family: "More Sugar Thin";
 }
 
 #art h3{
-  font-size: 20px;
+  /*font-size: 20px;*/
   margin:0;
 }
 
 .projects{
   padding: .5rem;
+
 
 }
 
@@ -536,6 +550,7 @@ div.desc {
 
 
   margin-top: 1rem;
+  text-align: center;
   padding: .5rem;
   list-style-type: none;
   transition: 0.3s;
@@ -572,19 +587,26 @@ div.desc {
 .projects-panel{
   height: 100%;
   padding: 0;
+  font-size: 16px;
+  font-family: "More Sugar Thin", serif;
 
 }
 
 .content-panel{
 
+margin-right: 8rem;
+  font-size: 22px;
 
 }
 
+
+
 .content-panel h1{
   border-left: gray 4px solid;
-  font-style: italic;
+  /*font-style: italic;*/
   padding-left: 2rem;
   margin-bottom: 1rem;
+  font-family: "More Sugar", serif;
 }
 
 .content-panel h4{
@@ -593,6 +615,29 @@ div.desc {
   padding-left: 2rem;
   color: #818181;
   margin-bottom: 3rem;
+  font-family: "More Sugar Thin", serif;
+}
+
+.content-panel h3{
+  font-size: 30px;
+  font-family: "More Sugar Thin", serif;
+
+}
+
+.content-panel h5{
+  font-family: "Spectral ExtraLight", serif;
+  font-size: 16px;
+  margin: 0;
+  text-align: right;
+
+  color: #7d7d7d;
+
+
+}
+
+
+.content-panel p{
+  font-family: Spectral;
 }
 
 
@@ -616,6 +661,7 @@ margin-left: 2rem;
 
 .tools li{
   margin: initial;
+  text-align: left;
 
   transition: initial;
   border-radius: initial;
@@ -642,4 +688,18 @@ margin-left: 2rem;
   width:100%;
   height: 800px;
   object-fit: scale-down;
+}
+
+.contain-img img{
+  width:600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.end-article{
+  padding: 0;
+  border: none;
+  text-align: center;
+  color: darkred;
+  font-style: italic;
 }

@@ -12,6 +12,7 @@ import Art from "./routes/art";
 import Other from "./routes/other";
 import MiracleDaycare from "./routes/miracle-daycare";
 import MedievalGame from "./routes/1347-game";
+import Prisma from "./routes/prisma";
 
 
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
             {
                 path: "code/1347-game",
                 element: <MedievalGame/>
+            },
+            {
+                path: "code/prisma",
+                element: <Prisma/>
             }
         ],
     },

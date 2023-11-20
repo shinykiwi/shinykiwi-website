@@ -133,7 +133,7 @@ export default function PersistentDrawerLeft() {
                         </div>
                         <div>
                             <h1>Kira Fountain</h1>
-                            <p><em>Gamedev student based in Montreal.</em></p>
+                            <p>Gamedev student based in Montreal.</p>
                         </div>
                         <div style={{display: "flex", flexDirection:"column", flexWrap: "wrap"}}>
                             <div>
