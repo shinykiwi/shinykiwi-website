@@ -383,6 +383,7 @@ i {
 
 }
 
+
 #code p {
   margin: 0;
   padding:0;
@@ -530,6 +531,21 @@ div.desc {
 #art h3{
   /*font-size: 20px;*/
   margin:0;
+}
+
+#art p{
+  font-size: 20px;
+  font-family: Spectral, serif;
+  margin: .3rem;
+}
+
+.prog-icon{
+
+  height: 2rem;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+  margin-right: .2rem;
 }
 
 .projects{
