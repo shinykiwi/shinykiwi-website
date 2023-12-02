@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+@font-face {
+  font-family: 'MoreSugar';
+  src: url("routes/fonts/MoreSugar-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'MoreSugarThin';
+  src: local("MoreSugarThin"), url("routes/fonts/MoreSugar-Thin.ttf") format("truetype");
+}
 
 
 html {
@@ -122,7 +133,7 @@ form[action$="destroy"] button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Spectral;
+  font-family: Spectral, serif;
 
 
 }
@@ -138,7 +149,7 @@ form[action$="destroy"] button {
   align-items: center;
   margin-bottom: 0;
   color: darkred;
-  font-family: "Spectral ExtraBold";
+  font-family: Spectral, serif;
 
 }
 
@@ -175,7 +186,7 @@ i {
 }
 
 #sidebar ul {
-  font-family: "More Sugar";
+  font-family: More Sugar, sans-serif;
   text-transform: lowercase;
   font-size:26px;
   padding: 0;
@@ -188,7 +199,7 @@ i {
   margin-top: .5rem;
   margin-bottom: 2rem;
   opacity: 75%;
-  font-family: "Spectral";
+  font-family: Spectral, serif;
 }
 
 #sidebar li {
@@ -482,7 +493,7 @@ div.desc {
   left: 0;
   right: 0;
   padding: 1.5rem;
-  font-family: "More Sugar Thin";
+  font-family: More Sugar Thin, sans-serif;
   display: flex;
   height: 100%;
   width: 100%;
@@ -520,12 +531,12 @@ div.desc {
 
 #art h1{
   font-size: 70px;
-  font-family: "More Sugar";
+  font-family: More Sugar, sans-serif;
 }
 
 #art h2{
   background-color: #FFD8ED;
-  font-family: "More Sugar Thin";
+  font-family: More Sugar Thin, sans-serif;
 }
 
 #art h3{
@@ -605,7 +616,7 @@ div.desc {
   height: 100%;
   padding: 0;
   font-size: 16px;
-  font-family: "More Sugar Thin", serif;
+  font-family: More Sugar Thin, sans-serif;
 
 }
 
@@ -623,7 +634,7 @@ margin-right: 8rem;
   /*font-style: italic;*/
   padding-left: 2rem;
   margin-bottom: 1rem;
-  font-family: "More Sugar", serif;
+  font-family: More Sugar, sans-serif;
 }
 
 .content-panel h4{
@@ -632,12 +643,12 @@ margin-right: 8rem;
   padding-left: 2rem;
   color: #818181;
   margin-bottom: 3rem;
-  font-family: "More Sugar Thin", serif;
+  font-family: More Sugar Thin, sans-serif;
 }
 
 .content-panel h3{
   font-size: 30px;
-  font-family: "More Sugar Thin", serif;
+  font-family: More Sugar Thin, sans-serif;
 
 }
 
@@ -654,7 +665,7 @@ margin-right: 8rem;
 
 
 .content-panel p{
-  font-family: Spectral;
+  font-family: Spectral, serif;
 }
 
 
@@ -719,4 +730,24 @@ margin-left: 2rem;
   text-align: center;
   color: darkred;
   font-style: italic;
+}
+
+#other h1{
+  font-family: More Sugar, sans-serif;
+  font-size: 40px;
+}
+
+#other h2{
+  font-family: More Sugar, sans-serif;
+  margin: 1rem;
+  background-color:#FFEFBC;
+}
+
+#other h3{
+  font-family: More Sugar Thin, sans-serif;
+}
+
+#other p{
+  font-family: Spectral, serif;
+  font-size: 20px;
 }

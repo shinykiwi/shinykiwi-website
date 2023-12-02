@@ -19,7 +19,7 @@ export default function Other() {
         <>
 
 
-            <Container maxWidth={'xl'}>
+            <Container maxWidth={'lg'} id={"other"}>
                 <h1><em>✨ Other stuff ✨</em></h1>
 
 
@@ -30,7 +30,7 @@ export default function Other() {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <h2 style={{margin:"1rem", backgroundColor:"#FFEFBC"}}>Resources</h2>
+                            <h2 style={{}}>Resources</h2>
                             <Divider/>
                         </AccordionSummary>
                         <AccordionDetails>
@@ -51,7 +51,7 @@ export default function Other() {
                                                 </div>
                                             </div>
                                         </a>
-                                        <p style={{fontSize: "12px"}}>Fountain, Kira. "Intro to Pixel Art." Concordia Game Development. 28 Jan. 2023, Concordia University, Montreal, Quebec.</p>
+                                        <p style={{fontSize: "14px"}}>Fountain, Kira. "Intro to Pixel Art." Concordia Game Development. 28 Jan. 2023, Concordia University, Montreal, Quebec.</p>
                                         <p>This was a workshop I hosted at Concordia, teaching the fundamentals of pixel art based on my years of experience. Feel free to download the PDF version.</p>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@ export default function Other() {
                                                 </div>
                                             </div>
                                         </a>
-                                        <p style={{fontSize: "12px"}}>Fountain, Kira. "Pixel Art for Games." Concordia Game Development. 18 Mar. 2023, Concordia University, Montreal, Quebec.</p>
+                                        <p style={{fontSize: "14px"}}>Fountain, Kira. "Pixel Art for Games." Concordia Game Development. 18 Mar. 2023, Concordia University, Montreal, Quebec.</p>
                                         <p>This was the second part to the other pixel art workshop, focusing more on the process and techniques used in pixel art for games specifically.</p>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@ export default function Other() {
                                                 </div>
                                             </div>
                                         </a>
-                                        <p style={{fontSize: "12px"}}>Fountain, Kira. "The Stickiness of Skyrim: A Medieval Fantasy for the Ages." CART 210. 3 Apr. 2023, Concordia University, Montreal, Quebec.</p>
+                                        <p style={{fontSize: "14px"}}>Fountain, Kira. "The Stickiness of Skyrim: A Medieval Fantasy for the Ages." CART 210. 3 Apr. 2023, Concordia University, Montreal, Quebec.</p>
                                         <p><strong>Abstract:</strong> <em>The Elder Scrolls V: Skyrim</em> is a 2011 open-world RPG developed by Bethesda Game Studios. It takes place in the province of Skyrim, a cold and mountainous region of the fictional continent of Tamriel. Players take on the role of the "Dragonborn," with the ability to absorb the souls of slain dragons and take on their powers. The game features a vast and detailed world for players to explore with an extensive customizable character system. This allows players to create and play as a wide range of characters, with various races, appearances, voices and skills. The game has been highly praised by critics and recognized for its gameplay successes. I will discuss the theory of neo-medievalism, and how aspects of identity, control, and nostalgia contribute to the lasting success and popularity of Skyrim.
                                         </p>
                                         <p>
