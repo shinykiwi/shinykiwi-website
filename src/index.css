@@ -3,12 +3,12 @@
 
 @font-face {
   font-family: 'MoreSugar';
-  src: local("MoreSugar-Regular"), url("routes/fonts/MoreSugar-Regular.ttf") format("truetype");
+  src: local("MoreSugar-Regular"), url("./routes/fonts/MoreSugar-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'MoreSugarThin';
-  src: local("MoreSugar-Thin"), url("routes/fonts/MoreSugar-Thin.ttf") format("truetype");
+  src: local("MoreSugar-Thin"), url("./routes/fonts/MoreSugar-Thin.ttf") format("truetype");
 }
 
 
