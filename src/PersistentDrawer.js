@@ -91,7 +91,7 @@ export default function PersistentDrawerLeft() {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar position="fixed" elevation="0" open={open}>
-                <Toolbar sx={{backgroundColor: "#2e83ff"}}>
+                <Toolbar sx={{backgroundColor: "#000000"}}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -119,7 +119,7 @@ export default function PersistentDrawerLeft() {
                 open={open}
             >
                 <DrawerHeader>
-                    <IconButton onClick={handleDrawerClose}>
+                    <IconButton onClick={handleDrawerClose} >
                         {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                     </IconButton>
                 </DrawerHeader>

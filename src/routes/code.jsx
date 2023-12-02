@@ -105,7 +105,7 @@ export default function Code() {
                 </div>
 
 
-                <h3 style={{fontFamily: "More Sugar", fontSize: "24px"}}>My projects</h3>
+                <h3 style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>Projects</h3>
                 <ProjectDisplay/>
 
 

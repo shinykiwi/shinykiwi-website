@@ -8,7 +8,7 @@ const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
-    fontFamily: "More Sugar Thin",
+    fontFamily: "Spectral",
     transform: 'translate(-50%, -50%)',
     width: '40rem',
     bgcolor: 'background.paper',
