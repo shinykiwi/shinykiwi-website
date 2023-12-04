@@ -173,21 +173,10 @@ export default function PersistentDrawerLeft() {
                                             <GitHubIcon/>
                                         </a>
 
-
-
                                     </Stack>
-
-
                             </div>
-
-
-
-
                         </div>
-
-
                     </nav>
-
                 </div>
 
 

@@ -94,7 +94,7 @@ export default function Other() {
                                     <h3>The Stickiness of Skyrim: A Medieval Fantasy for the Ages</h3>
                                     <div >
 
-                                        <a href={"./pdfs/skyrim-essay.pdf"}>
+                                        <a href={SkyrimEssay}>
                                             <div className={'container'}>
                                                 <img src={require(`./art/skyrim-header.png`)} alt="Cinque Terre" width="600" height="400" className='image'/>
                                                 <div className="overlay">

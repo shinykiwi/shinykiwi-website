@@ -207,6 +207,16 @@ export default function Freddyscafe() {
                         <h3 style={{marginTop: "3rem"}}>Successes and Failures</h3>
                         <p>Players smoothly navigated our UI, grasping the game's goals pretty quickly. Most of the positive reception was regarding our camera transitions. For future iterations, animations like filling cups, diversifying recipes, and introducing a subtle timer for added challenges can make the game more engaging and satisfying while diversifying the game loop.</p>
 
+                        <h3 style={{marginTop: "3rem"}}>Want to play?</h3>
+                        <p>It's available on itch.io for Windows and Mac.</p>
+                        <div style={{}}>
+                            <iframe frameBorder="0"
+                                    src="https://itch.io/embed/2364546?bg_color=ffffff&amp;fg_color=222222&amp;link_color=e4a672&amp;border_color=68515b"
+                                    width="552" height="167"><a href="https://tuanabicakci.itch.io/freddys-cafe">Freddy's
+                                Cafe by tuanabicakci</a></iframe>
+
+                        </div>
+
                         <h3 style={{marginTop: "3rem"}}>Takeaways</h3>
                         <p>This project pushed us into uncharted territory with its heavy reliance on UI, a departure from our usual games. The challenge was a great learning experience, and now, in future projects, we feel more comfortable with widgets and UI in Unreal Engine and are eager to experiment some more.</p>
 
@@ -214,6 +224,7 @@ export default function Freddyscafe() {
 
                         <h3 style={{marginTop: "2rem"}} className={"end-article"}>thanks for reading!</h3>
                         <h3 className={"end-article"}>- Kira & Tuana</h3>
+
 
                         <div className={"cover-img"}>
                             <div style={{textAlign: "right"}}>

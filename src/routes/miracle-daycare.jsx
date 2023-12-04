@@ -41,6 +41,8 @@ export default function MiracleDaycare() {
                         <h1 style={{margin: 0}}>Miracle Daycare</h1>
                         <h4>July 2023 - Present</h4>
 
+                        <h3 style={{fontSize: "26px", marginLeft: "2rem", color: "goldenrod"}}>WORK IN PROGRESS</h3>
+
                         <p>A first person horror where you play as a thrift store employee, sorting through the donations of a closed down daycare.
                         The design of this game focuses on narrative and environmental storytelling, and was a way for my dev partner and I to learn Unreal Engine 5.
                         The game was programmed using blueprints. The game is still in development!</p>
@@ -50,12 +52,14 @@ export default function MiracleDaycare() {
                             <div>
                                 <h3>Partner</h3>
                                 <ul>
-                                    <a href={"https://www.linkedin.com/in/tuana-bicakci/"}><li>
-                                        Tuana Bıçakcı (Designer/Programmer)
+                                    <a href={"https://tuanabicakci.dev/"}><li>
+                                        Tuana Bıçakcı (Programmer/Artist)
 
                                     </li></a>
 
                                 </ul>
+
+                                <h3 style={{fontSize: "26px", marginLeft: "2rem", color: "darkred"}}>+ me! (programmer)</h3>
 
                             </div>
                             <div>

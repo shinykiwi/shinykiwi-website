@@ -15,6 +15,7 @@ import HTMLLogo from "./games/icons/html5.svg";
 import CSSLogo from "./games/icons/css.svg";
 import TailwindLogo from "./games/icons/tailwind.svg";
 import ReactLogo from "./games/icons/react.svg";
+import Resume from "./pdfs/KiraFountain-Resume.pdf";
 
 
 
@@ -105,7 +106,10 @@ export default function Code() {
                 </div>
 
 
-                <h3 style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>Projects</h3>
+                <a href={"mailto:kafountain5@gmail.com"}><h3 style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>Email me</h3></a>
+                <a href={Resume}><h3 style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>CV</h3></a>
+
+                <h3  style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>Projects</h3>
                 <ProjectDisplay/>
 
 

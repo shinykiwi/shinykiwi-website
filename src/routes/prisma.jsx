@@ -194,6 +194,14 @@ export default function Prisma() {
                             </div>
                         </div>
 
+                        <h3 style={{marginTop: "3rem"}}>Want to play?</h3>
+                        <p>It's available on itch.io for Windows only.</p>
+
+                        <iframe frameBorder="0"
+                                src="https://itch.io/embed/2353137?border_width=0&amp;bg_color=e9f8fb&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=bebebe"
+                                width="550" height="165"><a href="https://tuanabicakci.itch.io/prisma">PRISMA by
+                            tuanabicakci, kira</a></iframe>
+
 
 
                         <h3 style={{marginTop: "3rem"}}>Takeaways</h3>
