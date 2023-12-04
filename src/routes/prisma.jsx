@@ -6,7 +6,7 @@ import ImageGallery from "react-image-gallery";
 // import stylesheet if you're not already using CSS @import
 import "react-image-gallery/styles/css/image-gallery.css";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import playingGame from "./games/prismagame/playing-our-game.png";
+import playingGame from "./games/freddyscafe/playing-our-game.png";
 import trophies from "./games/prismagame/trophies.png";
 
 
@@ -31,10 +31,6 @@ const images = [
         original: "https://cdn.discordapp.com/attachments/1170173602058993834/1170876444348522556/red-bg.png?ex=655aa2aa&is=65482daa&hm=113d7ee65b77a46b8594a96bcbd32372b7680089b1b4c9ba51ecdee3a308b0c5&",
         thumbnail: "https://cdn.discordapp.com/attachments/1170173602058993834/1170876444348522556/red-bg.png?ex=655aa2aa&is=65482daa&hm=113d7ee65b77a46b8594a96bcbd32372b7680089b1b4c9ba51ecdee3a308b0c5&",
     },
-    {
-        original: playingGame,
-        thumbnail: playingGame,
-    },
 ];
 
 export default function Prisma() {
@@ -57,7 +53,7 @@ export default function Prisma() {
                             <div>
                                 <h3>Partner</h3>
                                 <ul>
-                                    <a href={"https://www.linkedin.com/in/tuana-bicakci/"}><li>
+                                    <a href={"https://tuanabicakci.dev/"}><li>
                                         Tuana Bıçakcı (Programmer/Artist)
 
                                     </li></a>
@@ -88,6 +84,7 @@ export default function Prisma() {
                                             </li>
                                             <li>Blender</li>
                                             <li>Substance Painter</li>
+                                            <li>Illustrator</li>
 
                                         </ul>
                                     </div>
@@ -177,15 +174,39 @@ export default function Prisma() {
                         <p>We used Unreal Engine blueprints to make this game, because they make it quick to get a prototype going.
                         </p>
 
+                        <p><br/><strong>Mechanic highlight: Colour Switching</strong></p>
+
+                        <p>
+                            In the BP_ThirdPersonCharacter:
+                            <br/>- On right mouse button click ->
+                            <br/>- Get the first index of the colours array, set it to the temporary variable
+                            <br/>- Pop the first index out of the array and add it to the end of the array, while shifting other values
+                            <br/>- Then update the material of the back wall to be the new first index and the material of the handheld light to be the second index
+                            <br/>- Then trigger updating the widget to switch the colours visually
+
+
+                        </p>
+
+                        <div className={"blueprint-img"}>
+                            <div style={{textAlign: "right"}}>
+                                <img src={require(`./games/prismagame/colour-switching.png`)} />
+                                <h5>Blueprint snapshot of changing colours mechanic.</h5>
+                            </div>
+                        </div>
+
+
+
                         <h3 style={{marginTop: "3rem"}}>Takeaways</h3>
                         <p>Overall it was fun to try something new and out of our comfort zones, since my partner and I tend to make games that are heavy on narrative and physical mechanics are not a priority. If I were to do this game again, I would pay particular attention to the jumping mechanic and making that feel better to play.</p>
 
-                        <h3 className={"end-article"}>thanks for reading!</h3>
+
+
+                        <h3 style={{marginTop: "2rem"}} className={"end-article"}>thanks for reading!</h3>
                         <h3 className={"end-article"}>- Kira</h3>
+
+
                     </div>
                 }/>
-
-
 
                 <div style={{height: '10rem'}}>
 

@@ -13,6 +13,7 @@ import Other from "./routes/other";
 import MiracleDaycare from "./routes/miracle-daycare";
 import MedievalGame from "./routes/1347-game";
 import Prisma from "./routes/prisma";
+import Freddyscafe from "./routes/freddyscafe";
 
 
 
@@ -49,7 +50,12 @@ const router = createBrowserRouter([
             {
                 path: "code/prisma",
                 element: <Prisma/>
+            },
+            {
+                path: "code/freddys-cafe",
+                element: <Freddyscafe/>
             }
+
         ],
     },
 
