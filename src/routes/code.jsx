@@ -36,7 +36,7 @@ export default function Code() {
 
 
                 <h1>Hi, I'm Kira</h1>
-                <p>I'm a game development student based in Montreal. I'm in my third year, studying Computer Science at Concordia University.
+                <p>I'm a game development student based in Montreal, QC. I'm in my third year, studying Computer Science at <a href={"https://www.concordia.ca/academics/undergraduate/computer-science-comp-arts.html"}>Concordia University</a>.
                     My main focus thus far has been on game programming, however I have a variety of experience with software development, databases, web development and various APIs.
                     Here you can find all my projects related to the world of programming. </p>
 
