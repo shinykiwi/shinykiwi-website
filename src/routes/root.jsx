@@ -9,17 +9,17 @@ import * as React from "react";
 export default function Root() {
     return (
         <>
-            <PersistentDrawerLeft>
-
-            </PersistentDrawerLeft>
-
-            <div id="detail">
+            <PersistentDrawerLeft main={<div id="detail">
                 <div style={{marginTop: "5rem"}}></div>
                 <Outlet/>
 
 
+            </div>}>
 
-            </div>
+
+            </PersistentDrawerLeft>
+
+
         </>
     );
 }

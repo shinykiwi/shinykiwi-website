@@ -32,19 +32,17 @@ const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     ({ theme, open }) => ({
-        flexGrow: 1,
+
         padding: theme.spacing(3),
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        marginLeft: `-${drawerWidth}px`,
         ...(open && {
             transition: theme.transitions.create('margin', {
                 easing: theme.transitions.easing.easeOut,
                 duration: theme.transitions.duration.enteringScreen,
             }),
-            marginLeft: 0,
         }),
     }),
 );
@@ -58,7 +56,6 @@ const AppBar = styled(MuiAppBar, {
     }),
     ...(open && {
         width: `calc(100% - ${drawerWidth}px)`,
-        marginLeft: `${drawerWidth}px`,
         transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.easeOut,
             duration: theme.transitions.duration.enteringScreen,
@@ -75,7 +72,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     justifyContent: 'flex-end',
 }));
 
-export default function PersistentDrawerLeft() {
+export default function PersistentDrawerLeft(props) {
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
 
@@ -88,7 +85,7 @@ export default function PersistentDrawerLeft() {
     };
 
     return (
-        <Box sx={{ display: 'flex' }}>
+        <Container>
             <CssBaseline />
             <AppBar position="fixed" elevation="0" open={open}>
                 <Toolbar sx={{backgroundColor: "#000000"}}>
@@ -97,7 +94,7 @@ export default function PersistentDrawerLeft() {
                         aria-label="open drawer"
                         onClick={handleDrawerOpen}
                         edge="start"
-                        sx={{ mr: 2, ...(open && { display: 'none' }) }}
+                        sx={{ ...(open && { display: 'none' }) }}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -113,7 +110,7 @@ export default function PersistentDrawerLeft() {
                         boxSizing: 'border-box',
                     },
                 }}
-                variant="persistent"
+                variant="temporary"
                 anchor="left"
                 elevation="0"
                 open={open}
@@ -179,14 +176,15 @@ export default function PersistentDrawerLeft() {
                     </nav>
                 </div>
 
-
-
             </Drawer>
-            <Main open={open}>
-                <DrawerHeader />
 
 
-            </Main>
-        </Box>
+            <Box>{props.main}</Box>
+
+                {/*<DrawerHeader />*/}
+
+
+
+        </Container>
     );
 }

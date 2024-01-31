@@ -16,6 +16,8 @@ import CSSLogo from "./games/icons/css.svg";
 import TailwindLogo from "./games/icons/tailwind.svg";
 import ReactLogo from "./games/icons/react.svg";
 import Resume from "./pdfs/KiraFountain-Resume.pdf";
+import EmailIcon from '@mui/icons-material/Email';
+import FeaturedProject from "../FeaturedProject";
 
 
 
@@ -32,93 +34,119 @@ export default function Code() {
 
     return (
         <div id="art">
-            <Container maxWidth='lg'>
 
+            <Container maxWidth={'lg'}>
+                <div>
+                    <h1>Hi, I'm Kira</h1>
+                    <div style={{display: "flex"}}>
 
-                <h1>Hi, I'm Kira</h1>
-                <p>I'm a game development student based in Montreal, QC. I'm in my third year, studying Computer Science at <a href={"https://www.concordia.ca/academics/undergraduate/computer-science-comp-arts.html"}>Concordia University</a>.
-                    My main focus thus far has been on game programming, however I have a variety of experience with software development, databases, web development and various APIs.
-                    Here you can find all my projects related to the world of programming. </p>
-
-                <div style={{display: "flex", justifyContent: "space-between", boxSizing: "border-box"}}>
-                    <div >
-                        <h2>Languages</h2>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={PythonLogo}  alt={"python logo"}/>
-                            <p>Python</p>
-                        </div>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={CPPLogo}  alt={"cpp logo"}/>
-                            <p>C++</p>
-                        </div>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={JavaLogo}  alt={"cpp logo"}/>
-                            <p>Java</p>
-                        </div>
-
+                        <a href={"mailto:kafountain5@gmail.com"}><h3
+                            style={{fontFamily: "Love Ya Like A Sister", fontSize: "18px", marginRight: "1rem"}}><EmailIcon/></h3></a>
+                        <a href={Resume} target={"_blank"}><h3 style={{fontFamily: "Love Ya Like A Sister", fontSize: "18px"}}>Resume</h3>
+                        </a>
                     </div>
+                    <p style={{marginBottom: "2rem"}}>I'm a game development student based in Montreal, QC. I'm in my third year, studying Computer
+                        Science
+                        at <a
+                            href={"https://www.concordia.ca/academics/undergraduate/computer-science-comp-arts.html"}>Concordia
+                            University</a>.
+                        My main focus thus far has been on game programming, however I have a variety of experience
+                        with
+                        software development, databases, web development and various APIs.
+                        Here you can find all my projects related to the world of programming. </p>
+
                     <div>
-                        <h2>Engines</h2>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={UnrealEngineLogo}  alt={"cpp logo"}/>
-                            <p>Unreal Engine 5</p>
+                        <div className={"code-responsive"}>
+                            <div style={{borderRight: "2px solid grey", paddingRight: "1rem", marginRight: "3rem"}}>
+                                <h3 style={{
+                                    fontFamily: "Love Ya Like A Sister",
+                                    fontSize: "30px",
+                                }}>Projects</h3>
+                                <ProjectDisplay/>
+
+                            </div>
+                            <div>
+
+                                <FeaturedProject/>
+
+                            </div>
+
                         </div>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={GodotLogo}  alt={"cpp logo"}/>
-                            <p>Godot</p>
+
+                        <div style={{
+                            marginTop: "2rem",
+                            display: "flex",
+                            justifyContent: "space-between", boxSizing: "border-box"}}>
+                            <div>
+                                <h2>Languages</h2>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={PythonLogo} alt={"python logo"}/>
+                                    <p>Python</p>
+                                </div>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={CPPLogo} alt={"cpp logo"}/>
+                                    <p>C++</p>
+                                </div>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={JavaLogo} alt={"cpp logo"}/>
+                                    <p>Java</p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <h2>Engines</h2>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={UnrealEngineLogo} alt={"cpp logo"}/>
+                                    <p>Unreal Engine 5</p>
+                                </div>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={GodotLogo} alt={"cpp logo"}/>
+                                    <p>Godot</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Web Dev</h2>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={JSLogo} alt={"cpp logo"}/>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={HTMLLogo} alt={"cpp logo"}/>
+                                    <p>HTML5</p>
+                                </div>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={CSSLogo} alt={"cpp logo"}/>
+                                    <p>CSS</p>
+                                </div>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={TailwindLogo} alt={"cpp logo"}/>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div style={{display: "flex"}}>
+                                    <img className={"prog-icon"} src={ReactLogo} alt={"cpp logo"}/>
+                                    <p>React</p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <h2>Methodologies</h2>
+                                <p>Agile</p>
+                                <p>Scrum</p>
+                            </div>
+                            <div>
+                                <h2>APIs & Libraries</h2>
+                                <p>Discord API</p>
+                                <p>interactions.py</p>
+                            </div>
+
                         </div>
+
                     </div>
-                    <div>
-                        <h2>Web Dev</h2>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={JSLogo}  alt={"cpp logo"}/>
-                            <p>JavaScript</p>
-                        </div>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={HTMLLogo}  alt={"cpp logo"}/>
-                            <p>HTML5</p>
-                        </div>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={CSSLogo}  alt={"cpp logo"}/>
-                            <p>CSS</p>
-                        </div>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={TailwindLogo}  alt={"cpp logo"}/>
-                            <p>Tailwind</p>
-                        </div>
-                        <div style={{display: "flex"}}>
-                            <img className={"prog-icon"} src={ReactLogo}  alt={"cpp logo"}/>
-                            <p>React</p>
-                        </div>
-
-                    </div>
-                    <div>
-                        <h2>Methodologies</h2>
-                        <p>Agile</p>
-                        <p>Scrum</p>
-                    </div>
-                    <div>
-                        <h2>APIs & Libraries</h2>
-                        <p>Discord API</p>
-                        <p>interactions.py</p>
-                    </div>
-
-                </div>
-
-
-                <a href={"mailto:kafountain5@gmail.com"}><h3 style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>Email me</h3></a>
-                <a href={Resume}><h3 style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>CV</h3></a>
-
-                <h3  style={{fontFamily: "Love Ya Like A Sister", fontSize: "30px"}}>Projects</h3>
-                <ProjectDisplay/>
-
-
-
-
-                <div style={{height: '10rem'}}>
-
                 </div>
             </Container>
+
+
+            <div style={{height: '10rem'}}/>
 
 
         </div>

@@ -223,9 +223,6 @@ export default function Art() {
 
     ];
 
-
-
-
     return (
         <div id="art">
             <Container maxWidth={"xl"} >

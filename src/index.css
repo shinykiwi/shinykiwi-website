@@ -31,6 +31,21 @@ code {
   monospace;
 }
 
+a{
+  color: #ca96b1;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #ca96b1;
+
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #916581;
+}
+
 
 html,
 body {
@@ -47,7 +62,7 @@ button {
   border: none;
   border-radius: 8px;
   padding: 0.5rem 0.75rem;
-  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
   background-color: white;
   line-height: 1.5;
   margin: 0;
@@ -60,11 +75,11 @@ button {
 textarea:hover,
 input:hover,
 button:hover {
-  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
 }
 
 button:active {
-  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+  box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.4);
   transform: translateY(1px);
 }
 
@@ -242,8 +257,7 @@ i {
 
 #detail {
   flex: 1;
-  padding: 2rem 2rem;
-  padding-left: 0;
+  padding: 2rem 0;
   width: 100%;
 }
 
@@ -558,10 +572,9 @@ div.desc {
 .prog-icon{
 
   height: 2rem;
-  margin: 0;
   text-align: center;
   align-self: center;
-  margin-right: .2rem;
+  margin: 0 .2rem 0 0;
 }
 
 .projects{
@@ -581,7 +594,7 @@ div.desc {
 
 .projects li {
 
-  font-family: Spectral;
+  font-family: Spectral, serif;
   font-size: 20px;
   margin-top: 1rem;
   text-align: center;
@@ -765,3 +778,23 @@ margin-left: 2rem;
   font-family: Spectral, serif;
   font-size: 20px;
 }
+
+
+
+@media screen and (max-width: 1180px) {
+  .code-responsive{
+    display: inline;
+    justify-content: center;
+
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .code-responsive{
+    display: flex;
+    justify-content: left;
+
+  }
+
+}
+
