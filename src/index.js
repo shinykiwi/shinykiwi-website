@@ -14,6 +14,7 @@ import MiracleDaycare from "./routes/miracle-daycare";
 import MedievalGame from "./routes/1347-game";
 import Prisma from "./routes/prisma";
 import Freddyscafe from "./routes/freddyscafe";
+import Sdl2Basic from "./routes/sdl2-basic";
 
 
 
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
             {
                 path: "code/freddys-cafe",
                 element: <Freddyscafe/>
+            },
+            {
+                path: "code/sdl2-basic",
+                element: <Sdl2Basic/>
             }
 
         ],

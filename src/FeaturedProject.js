@@ -2,15 +2,11 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import {grey} from "@mui/material/colors";
 import moment from "moment";
+import posts from "./posts.json";
 
 export default function FeaturedProject(props) {
 
-    const image = "freddyscafe/camera-setup.png"
-    const paragraph = "I discuss our development process for the Gamerella 2023 submission, made in Unreal Engine 5."
-    const date = moment("202401310250", "YYYYMMDDHHmm").fromNow()
-    const pageLink = "./code/freddys-cafe"
-    const title = "How We Made Freddys Cafe"
-
+    const postNumber = 0;
 
     const buttonSX = {
         fontFamily:  "Love Ya Like A Sister, cursive",
@@ -38,8 +34,8 @@ export default function FeaturedProject(props) {
                         <h3 style={{
                             fontFamily: "Love Ya Like A Sister",
                             fontSize: "30px",
-                        }}>"{title}"</h3>
-                        <em><p style={dateSX}>Updated {date}</p></em>
+                        }}>"{posts[postNumber].title}"</h3>
+                        <em><p style={dateSX}>Updated {moment(posts[postNumber].date, "YYYYMMDDHHmm").fromNow()}</p></em>
 
                     </div>
                     <div style={{display: "flex"}}>
@@ -48,10 +44,10 @@ export default function FeaturedProject(props) {
                             filter: "drop-shadow(3px 3px 2px black)",
                             objectFit: "cover",
                             marginRight: "2rem"
-                        }} src={require(`./routes/games/${image}`)}/>
+                        }} src={require(`./routes/games/${posts[postNumber].image}`)}/>
                         <div style={{width: "30%"}}>
-                            <a href={pageLink} style={buttonSX}>READ</a>
-                            <p style={{marginTop: "2rem", textAlign: "justify"}}>{paragraph}</p>
+                            <a href={posts[postNumber].link} style={buttonSX}>READ</a>
+                            <p style={{marginTop: "2rem", textAlign: "justify"}}>{posts[postNumber].summary}</p>
 
                         </div>
 

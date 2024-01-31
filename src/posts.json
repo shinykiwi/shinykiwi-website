@@ -1,10 +1,10 @@
 [
   {
     "title": "Practicing C++ with SDL2",
-    "summary": "I just picked up the SDL2 library after refreshing my C++ skills, and am going to document my learning process here.",
-    "date": "202401310250",
+    "summary": "In tandem with refreshing my C++ skills, I've picked up the SDL2 library and am going to document my learning process here, with the goal of creating a simple game.",
+    "date": "202401310850",
     "link": "./code/prisma",
-    "image": "freddyscafe/camera-setup.png"
+    "image": "sdl2/SDL2-progress.png"
   },
   {
 

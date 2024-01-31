@@ -798,3 +798,11 @@ margin-left: 2rem;
 
 }
 
+code{
+  background-color: #e7e7e7;
+  color: #299ff9;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 18px;
+
+}
