@@ -3,7 +3,7 @@
     "title": "Practicing C++ with SDL2",
     "summary": "In tandem with refreshing my C++ skills, I've picked up the SDL2 library and am going to document my learning process here, with the goal of creating a simple game.",
     "date": "202401310850",
-    "link": "./code/prisma",
+    "link": "./code/sdl2-basic",
     "image": "sdl2/SDL2-progress.png"
   },
   {
