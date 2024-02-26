@@ -8,11 +8,10 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import playingGame from "./games/freddyscafe/playing-our-game.png";
 import trophies from "./games/prismagame/trophies.png";
-
+import blueBG from "./games/prismagame/blue-bg.png";
+import redBG from "./games/prismagame/red-bg.png";
 
 import ProjectDisplay from "../ProjectDisplay";
-
-
 
 
 const containerSpacing = 2;
@@ -24,12 +23,12 @@ const lg = 3;
 
 const images = [
     {
-        original: "https://cdn.discordapp.com/attachments/1170173602058993834/1170876443463520287/blue-bg.png?ex=655aa2a9&is=65482da9&hm=87db3e34b359748101146e460bfc3f7978bedf036a956060fc3f437dbc6b061d&",
-        thumbnail: "https://cdn.discordapp.com/attachments/1170173602058993834/1170876443463520287/blue-bg.png?ex=655aa2a9&is=65482da9&hm=87db3e34b359748101146e460bfc3f7978bedf036a956060fc3f437dbc6b061d&",
+        original: blueBG,
+        thumbnail: blueBG,
     },
     {
-        original: "https://cdn.discordapp.com/attachments/1170173602058993834/1170876444348522556/red-bg.png?ex=655aa2aa&is=65482daa&hm=113d7ee65b77a46b8594a96bcbd32372b7680089b1b4c9ba51ecdee3a308b0c5&",
-        thumbnail: "https://cdn.discordapp.com/attachments/1170173602058993834/1170876444348522556/red-bg.png?ex=655aa2aa&is=65482daa&hm=113d7ee65b77a46b8594a96bcbd32372b7680089b1b4c9ba51ecdee3a308b0c5&",
+        original: redBG,
+        thumbnail: redBG,
     },
 ];
 
