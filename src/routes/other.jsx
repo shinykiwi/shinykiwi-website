@@ -24,7 +24,7 @@ export default function Other() {
 
                 <h1>Posts</h1>
                 <div style={{fontSize:"18px"}}>
-                    <a>h</a>
+                    <a></a>
                 </div>
 
 
