@@ -219,6 +219,22 @@ i {
   font-family: Spectral, serif;
 }
 
+#link{
+  font-family: Spectral, serif;
+  text-transform: lowercase;
+  font-size:26px;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+#link a{
+  color: black;
+  opacity: 75%;
+}
+#link a:hover{
+  opacity: 100%;
+}
+
 #sidebar li {
   display: flex;
   margin: 0.25rem 0;
