@@ -20,9 +20,7 @@ export default function Other() {
 
 
             <Container maxWidth={'lg'} id={"other"}>
-                <h1><em>✨ Other stuff ✨</em></h1>
-
-                <h1>Posts</h1>
+                <h1>Notes</h1>
                 <div style={{fontSize:"18px"}}>
                     <a></a>
                 </div>

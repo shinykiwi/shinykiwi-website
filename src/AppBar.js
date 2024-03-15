@@ -46,10 +46,13 @@ export default function ButtonAppBar() {
                         </div>
                         <div id="link">
                             <a href={`/other`}>
-                                Other</a>
+                                Notes</a>
+                        </div>
+                        <div id="link">
+                            <a href={`/me`}>
+                                me</a>
                         </div>
                     </div>
-
 
 
                 </Toolbar>

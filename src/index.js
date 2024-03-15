@@ -15,6 +15,7 @@ import MedievalGame from "./routes/1347-game";
 import Prisma from "./routes/prisma";
 import Freddyscafe from "./routes/freddyscafe";
 import Sdl2Basic from "./routes/sdl2-basic";
+import Me from "./routes/me";
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "other",
                 element: <Other/>
+            },
+            {
+                path: "me",
+                element: <Me/>
             },
             {
                 path: "code/miracle-daycare",

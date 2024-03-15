@@ -9,7 +9,7 @@ export default function FeaturedProject(props) {
     const postNumber = 0;
 
     const buttonSX = {
-        fontFamily:  "Love Ya Like A Sister, cursive",
+        fontFamily:  "Spectral, serif",
         fontWeight: "bold",
         fontSize: "24px",
         backgroundColor: "black",

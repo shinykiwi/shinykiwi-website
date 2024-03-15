@@ -9,7 +9,7 @@ import Link from '@mui/material/Link';
 import {Box, ImageList, ImageListItem} from "@mui/material";
 import BasicModal from "../BasicModal";
 
-const containerSpacing = 2;
+const containerSpacing = 0;
 const xs = 12;
 const md = 6;
 const lg = 3;
@@ -118,13 +118,7 @@ export default function Art() {
 
     ];
     const illustrations = [
-        {
-            id: '1',
-            title: 'SignaturedX MC',
-            year: '2022',
-            image: 'sig.png',
-            description: 'A friend\'s Minecraft skin illustration.'
-        },
+
         {
             id: '2',
             title: 'Artfight 2022 Character',
