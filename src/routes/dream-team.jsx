@@ -247,7 +247,7 @@ export default function DreamTeam() {
                             <li>Include concept art for characters and environment</li>
                         </ol>
 
-                        <h3 style={{marginTop: "3rem"}} id={"art dump"}>Art Dump</h3>
+                        <h3 style={{marginTop: "3rem"}} id={"art-dump"}>Art Dump</h3>
                         <div className={"art-div"}>
                             <Grid container spacing={containerSpacing}>
                                 {pixelArt.map((a) => (
