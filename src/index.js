@@ -16,6 +16,7 @@ import Prisma from "./routes/prisma";
 import Freddyscafe from "./routes/freddyscafe";
 import Sdl2Basic from "./routes/sdl2-basic";
 import Me from "./routes/me";
+import DreamTeam from "./routes/dream-team";
 
 
 
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
             {
                 path: "code/freddys-cafe",
                 element: <Freddyscafe/>
+            },
+            {
+                path: "code/dream-team",
+                element: <DreamTeam/>
             },
             {
                 path: "code/sdl2-basic",

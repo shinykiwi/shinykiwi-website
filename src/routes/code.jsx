@@ -43,7 +43,7 @@ export default function Code() {
 
 
                 <Project link={"/code/freddys-cafe"} image={"freddyscafe/camera-setup.png"} title={"Freddy's Cafe"}
-                description={"This game was made for the GAMERella 2023 game jam, within the 36 hours given. The theme for this game jam was “Extraction”, and immediately we thought of making coffee. All assets and code were made within the duration of the jam (except for the counters, stove and music). Both myself and Tuana were programmers and designers for this game."}
+                description={"This game was made for the GAMERella 2023 game jam, within the 36 hours given. The theme for this game jam was “Extraction”, and immediately we thought of making coffee. All assets and code were made within the duration of the jam (except for the counters, stove and music)."}
                 tagline={"Cozy barista simulator made in Unreal Engine."}
                 />
 
@@ -54,7 +54,7 @@ export default function Code() {
 
                 <Project link={"/code/prisma"} image={"prismagame/red-bg.png"} title={"Prisma"}
                          tagline={"Colour changing puzzle platformer."}
-                         description={"A 3D platformer game where manipulating the hues of the environment reveals unseen paths and puzzles. Activate all three prism statues to win. This game was made for the Concordia Game Jam 2023, within the 48 hours given. The theme was \"Space in Between\". All assets and code were made within the duration of the jam (except for the music). Both myself and Tuana were programmers and designers for this game."}
+                         description={"A 3D platformer game where manipulating the hues of the environment reveals unseen paths and puzzles. Activate all three prism statues to win. This game was made for the Concordia Game Jam 2023, within the 48 hours given. The theme was \"Space in Between\". All assets and code were made within the duration of the jam (except for the music)."}
                 />
 
             </Container>

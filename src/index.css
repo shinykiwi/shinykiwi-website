@@ -351,6 +351,7 @@ button:active {
 div.gallery img {
   width: 100%;
   height: auto;
+  padding: 0;
 
 }
 
@@ -473,6 +474,10 @@ div.desc {
   margin: .3rem;
 }
 
+#art a:hover{
+  text-decoration: underline;
+}
+
 .prog-icon{
 
   height: 2rem;
@@ -490,6 +495,9 @@ div.desc {
 .projects div{
   padding: .5rem;
 
+}
+.art-div div{
+  padding: 0;
 }
 
 .projects ul{
@@ -671,6 +679,21 @@ margin-left: 2rem;
 }
 .tools ul{
   margin-left: 1rem;
+}
+
+.constraints li{
+  margin: initial;
+  text-align: left;
+  transition: initial;
+  border-radius: initial;
+  background-color: initial;
+  list-style-type: decimal;
+}
+
+.constraints li:hover{
+  background-color: initial;
+
+  transform: initial;
 }
 
 .cover-img img{
