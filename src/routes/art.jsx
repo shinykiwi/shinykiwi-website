@@ -90,6 +90,22 @@ export default function Art() {
             image: 'cape-water.gif',
             description: 'Waterfall landscape in-game cosmetic. Commission work.'
         },
+        {
+            id: '11',
+            title: 'Minecraft Landscape',
+            year: '2024',
+            image: 'mandie-white-animated-UPDATED.gif',
+            description: 'Animated minecraft landscape twitter banner. Commission work.'
+        },
+        {
+            id: '12',
+            title: 'Ace Cluck',
+            year: '2024',
+            image: 'ace-cluck-final.png',
+            description: 'From Chicken Little. Commission work.'
+        }
+
+
 
 
     ];

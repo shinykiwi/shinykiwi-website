@@ -41,6 +41,10 @@ export default function Code() {
 
                 </div>
 
+                <Project link={"/code/dream-team"} image={"dreamteam/DT5.png"} title={"Dream Team"}
+                         description={"This game was made for the 2024 Ubisoft Game Lab, within the 12 weeks given. The theme for this competition was “Dream”, and we worked in a team of 6. I worked as a programmer and 3D artist."}
+                         tagline={"Online co-op dream defender game made in Unity."}
+                />
 
                 <Project link={"/code/freddys-cafe"} image={"freddyscafe/camera-setup.png"} title={"Freddy's Cafe"}
                 description={"This game was made for the GAMERella 2023 game jam, within the 36 hours given. The theme for this game jam was “Extraction”, and immediately we thought of making coffee. All assets and code were made within the duration of the jam (except for the counters, stove and music)."}
