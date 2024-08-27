@@ -51,15 +51,17 @@ export default function Code() {
                 tagline={"Cozy barista simulator made in Unreal Engine."}
                 />
 
+                <Project link={"/code/prisma"} image={"prismagame/red-bg.png"} title={"Prisma"}
+                         tagline={"Colour changing puzzle platformer."}
+                         description={"A 3D platformer game where manipulating the hues of the environment reveals unseen paths and puzzles. Activate all three prism statues to win. This game was made for the Concordia Game Jam 2023, within the 48 hours given. The theme was \"Space in Between\". All assets and code were made within the duration of the jam (except for the music)."}
+                />
+
                 <Project link={"/code/1347-game"} image={"game-view-result.png"} title={"1347 Game"}
                          tagline={"Combat adventure about the Black Death."}
                          description={"A combat adventure game for the Montreal Game Jam 2023, where the theme was \"historical event\". You play as a hire by the University of Paris medical faculty, where you work, to help contain the spread of the Black Death plague in a nearby town. Fight the poison air beasts that have been spreading the plague and save the town!"}
                 />
 
-                <Project link={"/code/prisma"} image={"prismagame/red-bg.png"} title={"Prisma"}
-                         tagline={"Colour changing puzzle platformer."}
-                         description={"A 3D platformer game where manipulating the hues of the environment reveals unseen paths and puzzles. Activate all three prism statues to win. This game was made for the Concordia Game Jam 2023, within the 48 hours given. The theme was \"Space in Between\". All assets and code were made within the duration of the jam (except for the music)."}
-                />
+
 
             </Container>
 
