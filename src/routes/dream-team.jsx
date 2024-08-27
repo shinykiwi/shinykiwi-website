@@ -156,25 +156,25 @@ export default function DreamTeam() {
 
                                         </li>
                                     </a>
-                                    <a href={""}>
+                                    <a href={"https://github.com/allyjenna"}>
                                         <li>
                                             Ally Steinberg (Programmer)
 
                                         </li>
                                     </a>
-                                    <a href={""}>
+                                    <a href={"https://github.com/DragonGawain"}>
                                         <li>
                                             Craig Kogan (Programmer)
 
                                         </li>
                                     </a>
-                                    <a href={""}>
+                                    <a href={"https://github.com/SarahMucci0312"}>
                                         <li>
                                             Sarah Mucci (Programmer)
 
                                         </li>
                                     </a>
-                                    <a href={""}>
+                                    <a href={"https://on.soundcloud.com/qHtDx"}>
                                         <li>
                                             Jacob Meleras (Sound Artist)
 
@@ -222,11 +222,11 @@ export default function DreamTeam() {
                             </div>
                         </div>
 
-                        {/*<div style={{textAlign: "center"}}>*/}
-                        {/*    <iframe width="840" height="475"*/}
-                        {/*            src="https://www.youtube.com/embed/B4lJhGOMk4E">*/}
-                        {/*    </iframe>*/}
-                        {/*</div>*/}
+                        <div style={{textAlign: "center"}}>
+                            <iframe width="840" height="475"
+                                    src="https://www.youtube.com/embed/FUWlbUMDmJk">
+                            </iframe>
+                        </div>
 
                         {/*<div>*/}
                         {/*    <ImageGallery items={images} showPlayButton={false} showNav={false} slideDuration={200} showFullscreenButton={false}/>*/}
@@ -246,6 +246,37 @@ export default function DreamTeam() {
                             <li>Include an accessibility feature</li>
                             <li>Include concept art for characters and environment</li>
                         </ol>
+
+                        <h3>My Role</h3>
+                        <p>For the majority of the project, I took on the role of fitting all of the pieces together on the code side and joining them with the art side, resolving any technical issues that existed or programmers not understanding how art assets work. Due to my proficiency in programming as well as art, I was able to help out everywhere at any time, wherever help was most needed so my work varied. Below I will describe some of the roles I took on throughout the project.
+                        </p>
+
+                        <h3 style={{marginTop: "3rem"}}>Design Choices</h3>
+
+                        <p>Some early designs  of the game were going to be more of a tower defense style game, where enemies would rush in and break apart walls to reach a sleeping person, and as Dream Agents in the real world you’d have to fend them off throughout 5 hours of the night. Most of this concept was scratched, but we kept the idea of having a hammer in the game and the map being a house. We also kept the name of the game!
+
+                        </p>
+
+                        <div className={"cover-img"}>
+                            <div style={{textAlign: "right"}}>
+                                <img src={require(`./games/dreamteam/gamelab-scribbles.png`)} />
+                                <h5>Original design sketches.</h5>
+                            </div>
+                        </div>
+
+                        <h3>Programming</h3>
+
+                        <p>At the beginning, it was about making a functioning build which would mean character movement, enemies attacking and dealing damage, player weapons and damage and other fundamentals of the game. The feature that caused the most anxiety at the beginning was networking, making the game a multiplayer experience, so the first thing I did was set up a demo of a client/host setup in the works so that both myself and our team knew that it was doable and not out of our depth.
+                        </p>
+
+                        <div className={"cover-img"}>
+                            <div style={{textAlign: "right"}}>
+                                <img src={require(`./games/dreamteam/multiplayer.png`)} />
+                                <h5>Basic demo of client/host setup and movement.</h5>
+                            </div>
+                        </div>
+
+                        <p>After this, I got a basic gun model in and started playing around with a visual effect for the flamethrower. I believed this was a good way to start getting a feel for the mechanics and the game. I did the same for the blaster gun.</p>
 
                         <h3 style={{marginTop: "3rem"}} id={"art-dump"}>Art Dump</h3>
                         <div className={"art-div"}>
@@ -268,20 +299,6 @@ export default function DreamTeam() {
 
 
 
-
-                        {/*<h3 style={{marginTop: "3rem"}}>Design Choices</h3>*/}
-
-                        {/*<p>We sought to blend the dynamic intensity of <em>Order Up </em>(2008) with the cozy appeal found in today's popular games. To achieve this, we've built a calming ambiance with soft color palettes, a minimalist UI, and a homely kitchen setting bathed in warm light.*/}
-                        {/*    We prioritized smooth camera transitions and gameplay flow to provide a calm experience for players without frustration.*/}
-
-                        {/*</p>*/}
-
-                        {/*<div className={"cover-img"}>*/}
-                        {/*    <div style={{textAlign: "right"}}>*/}
-                        {/*        <img src={require(`./games/freddyscafe/overhead.png`)} />*/}
-                        {/*        <h5>Overhead view of the kitchen.</h5>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
 
                         {/*<div className={"cover-img"}>*/}
                         {/*    <div style={{textAlign: "right"}}>*/}
