@@ -414,7 +414,7 @@ export default function DreamTeam() {
                             </div>
                         </div>
 
-                        <h3 style={{marginTop: "3rem"}}>Network Config</h3>
+                        <h3>Network Config</h3>
                         <p>Finally, another contribution I made was setting up Unity Relay, a free server system that Unity provides for its developers to allow for multiplayer with a limited number of users. This was perfect for our purposes because the game is meant to be a prototype that only two players at once will be playing, in front of the jury.
                             Part of this process involved requesting and receiving codes from the Unity Relay system and displaying that in a user-friendly way for the players to join each other's games with.
                         </p>
@@ -424,8 +424,6 @@ export default function DreamTeam() {
                                 <img src={require(`./games/dreamteam/network.png`)} />
                             </div>
                         </div>
-
-
 
                         {/*----------------------------ART DUMP--------------------------*/}
 
@@ -449,101 +447,20 @@ export default function DreamTeam() {
                             </Grid>
                         </div>
 
-
-
-
-                        {/*<div className={"cover-img"}>*/}
-                        {/*    <div style={{textAlign: "right"}}>*/}
-                        {/*        <img src={require(`./games/freddyscafe/camera-setup.png`)} />*/}
-                        {/*        <h5>Camera setup in the editor.</h5>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<h3 style={{marginTop: "3rem"}}>Technical Aspects</h3>*/}
-                        {/*<p>This was a very “UI” heavy game, since the player does not have control to move around, and movement is done through clicking buttons. As a result, a lot of our time was spent learning how to create UI in Unreal Engine and how to provoke events upon interaction.*/}
-                        {/*</p><br/>*/}
-
-                        {/*<p><strong>Classes</strong></p><br/>*/}
-                        {/*<p><em>BP_Recipe</em></p>*/}
-                        {/*<p>*/}
-                        {/*    <span style={{color: "deeppink"}}>Text</span> Name*/}
-                        {/*    <span style={{color: "cornflowerblue"}}>BP_Ingredient[]</span> IngredientList*/}
-                        {/*</p>*/}
-
-
-                        {/*<br/>*/}
-                        {/*<p><em>BP_Ingredient</em></p>*/}
-                        {/*<p><span style={{color: "deeppink"}}>Text</span> StepName <span style={{color: "dimgray"}}> // for example, 'boil'</span>*/}
-                        {/*<br/><span style={{color: "deeppink"}}>Text</span> Name <span style={{color: "dimgray"}}> // for example, 'coffee beans'</span>*/}
-                        {/*<br/><span style={{color: "crimson"}}>Boolean</span> Completed*/}
-                        {/*<br/><span style={{color: "darkcyan"}}>Integer</span> ViewTargetID <span style={{color: "dimgray"}}> // which camera view to switch to for that ingredient</span>*/}
-                        {/*<br/><span style={{color: "cornflowerblue"}}>Integer</span> IconImage <span style={{color: "dimgray"}}> // the ingredient icon to go in the left panel UI</span></p>*/}
-
-                        {/*<br/>*/}
-                        {/*<p><em>GI_Main</em></p>*/}
-                        {/*<p>Our custom game instance, which holds a reference to the current active ingredient and an array of CameraActors, referencing all the possible view targets to switch to.</p>*/}
-
-                        {/*<br/>*/}
-                        {/*<p><em>BP_TurkishCoffee (extends BP_Recipe) </em></p>*/}
-                        {/*<p>No variables, just initializes itself with preset specific Ingredients.</p>*/}
-                        {/*<p>Most of the functionality of the game was implemented in the Level Blueprint because we had to make use of many of the actors in the level like the cameras.</p>*/}
-
-                        {/*<div className={"cover-img"}>*/}
-                        {/*    <div style={{textAlign: "right"}}>*/}
-                        {/*        <img src={require(`./games/freddyscafe/turkish-coffee-initialization.png`)} />*/}
-                        {/*        <h5>Initializing BP_TurkishCoffee with preset ingredients.</h5>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-                        {/*<div className={"cover-img"}>*/}
-                        {/*    <div style={{textAlign: "right"}}>*/}
-                        {/*        <img src={require(`./games/freddyscafe/change-camera-views.png`)} />*/}
-                        {/*        <h5>Camera view changing based on ID.</h5>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<p>*/}
-                        {/*    This snapshot demonstrates when a new recipe is created, to dynamically populate the left side panel with the required steps based on what ingredients are necessary to create the item.</p>*/}
-                        {/*<div className={"blueprint-img"}>*/}
-                        {/*    <div style={{textAlign: "right"}}>*/}
-                        {/*        <img src={require(`./games/freddyscafe/populating-recipe.png`)} />*/}
-                        {/*        <h5>Populate event to fill the steps on left panel.</h5>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<h3 style={{marginTop: "3rem"}}>Successes and Failures</h3>*/}
-                        {/*<p>Players smoothly navigated our UI, grasping the game's goals pretty quickly. Most of the positive reception was regarding our camera transitions. For future iterations, animations like filling cups, diversifying recipes, and introducing a subtle timer for added challenges can make the game more engaging and satisfying while diversifying the game loop.</p>*/}
-
-                        {/*<h3 style={{marginTop: "3rem"}}>Want to play?</h3>*/}
-                        {/*<p>It's available on itch.io for Windows and Mac.</p>*/}
-                        {/*<div style={{}}>*/}
-                        {/*    <iframe frameBorder="0"*/}
-                        {/*            src="https://itch.io/embed/2364546?bg_color=ffffff&amp;fg_color=222222&amp;link_color=e4a672&amp;border_color=68515b"*/}
-                        {/*            width="552" height="167"><a href="https://tuanabicakci.itch.io/freddys-cafe">Freddy's*/}
-                        {/*        Cafe by tuanabicakci</a></iframe>*/}
-
-                        {/*</div>*/}
-
-                        {/*<h3 style={{marginTop: "3rem"}}>Takeaways</h3>*/}
-                        {/*<p>This project pushed us into uncharted territory with its heavy reliance on UI, a departure from our usual games. The challenge was a great learning experience, and now, in future projects, we feel more comfortable with widgets and UI in Unreal Engine and are eager to experiment some more.</p>*/}
-
-
-
-                        {/*<h3 style={{marginTop: "2rem"}} className={"end-article"}>thanks for reading!</h3>*/}
-                        {/*<h3 className={"end-article"}>- Kira & Tuana</h3>*/}
-
-
-                        {/*<div className={"cover-img"}>*/}
-                        {/*    <div style={{textAlign: "right"}}>*/}
-                        {/*        <img src={require(`./games/freddyscafe/us-together.jpg`)} />*/}
-                        {/*        <h5>Us at the GAMERella closing ceremony!</h5>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
+                        <h3 style={{marginTop: "3rem"}}>Reflection</h3>
+                        <p>Overall, I would say that this project was a good first game lab attempt. There are many things over the course of the project
+                            that I wish had been done differently. For example, we didn't get around to making multiple levels. However, I think the gameplay we achieved <em>felt</em> like it
+                            had the potential to be really fun as coop if we tweaked it some more but all in all the game wasn't up to my personal standards of what I believe would have been possible in twelve weeks. I'm still very proud of the art that Tuana and I created though, and I want to
+                            commend her for her incredible texture work and concept design. I truly believe the game looked aesthetically on par with other games at the competition
+                            all because of her hard work over the course of the lab. Couldn't recommend a better artist to work with. I also want to thank our mentors at Ubisoft for their criticisms and advice early on that would have saved us lots of trouble. Thanks!</p>
 
 
                     </div>
                 }/>
 
                 <div style={{height: '10rem'}}>
+                    <h3 style={{marginTop: "2rem"}} className={"end-article"}>thanks for reading!</h3>
+                    <h3 className={"end-article"}>- Kira</h3>
 
                 </div>
             </Container>
