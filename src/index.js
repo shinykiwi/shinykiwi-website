@@ -17,6 +17,7 @@ import Freddyscafe from "./routes/freddyscafe";
 import Sdl2Basic from "./routes/sdl2-basic";
 import Me from "./routes/me";
 import DreamTeam from "./routes/dream-team";
+import AcademicWeapon from "./routes/academic-weapon";
 
 
 
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
             {
                 path: "code/dream-team",
                 element: <DreamTeam/>
+            },
+            {
+                path: "code/academic-weapon",
+                element: <AcademicWeapon/>
             },
             {
                 path: "code/sdl2-basic",

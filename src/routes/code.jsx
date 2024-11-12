@@ -29,7 +29,7 @@ export default function Code() {
                         </a>
                     </div>
                     <p style={{marginBottom: "2rem"}}>I'm a game development student based in Montreal, QC. I'm in my
-                        third year, studying Computer
+                        fourth year, studying Computer
                         Science and Computation Arts
                         at <a
                             href={"https://www.concordia.ca/academics/undergraduate/computer-science-comp-arts.html"}>Concordia
@@ -40,6 +40,11 @@ export default function Code() {
                         Here you can find all my projects related to the world of programming. </p>
 
                 </div>
+
+                <Project link={"/code/academic-weapon"} image={"academic-weapon/aw_03.png"} title={"Academic Weapon"}
+                         description={"This game was made for the NAD Creative Jam 2024 within the 48 hours given. The theme for this competition was “Disappear”, and we worked in a team of 3. I worked as a programmer and tech artist."}
+                         tagline={"Stealth and strategy game made in Unity."}
+                />
 
                 <Project link={"/code/dream-team"} image={"dreamteam/DT5.png"} title={"Dream Team"}
                          description={"This game was made for the 2024 Ubisoft Game Lab, within the 12 weeks given. The theme for this competition was “Dream”, and we worked in a team of 6. I worked as a programmer and 3D artist."}
