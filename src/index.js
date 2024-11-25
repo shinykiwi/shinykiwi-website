@@ -18,6 +18,7 @@ import Sdl2Basic from "./routes/sdl2-basic";
 import Me from "./routes/me";
 import DreamTeam from "./routes/dream-team";
 import AcademicWeapon from "./routes/academic-weapon";
+import StarlitCatch from "./routes/starlit-catch";
 
 
 
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
             {
                 path: "code/academic-weapon",
                 element: <AcademicWeapon/>
+            },
+            {
+                path: "code/starlit-catch",
+                element: <StarlitCatch/>
             },
             {
                 path: "code/sdl2-basic",

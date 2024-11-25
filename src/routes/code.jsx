@@ -41,6 +41,11 @@ export default function Code() {
 
                 </div>
 
+                <Project link={"/code/starlit-catch"} image={"starlit-catch/starlit-catch_01.png"} title={"Starlit Catch"}
+                         description={"This game was made for GAMERella 2024 jam within the 36 hours given. The theme for this competition was “Hearth”, and we worked in a team of 5. I worked as a programmer and tech artist."}
+                         tagline={"Cozy night fishing game round a campfire."}
+                />
+
                 <Project link={"/code/academic-weapon"} image={"academic-weapon/aw_03.png"} title={"Academic Weapon"}
                          description={"This game was made for the NAD Creative Jam 2024 within the 48 hours given. The theme for this competition was “Disappear”, and we worked in a team of 3. I worked as a programmer and tech artist."}
                          tagline={"Stealth and strategy game made in Unity."}
