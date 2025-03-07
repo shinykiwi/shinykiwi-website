@@ -48,7 +48,7 @@ const images = [
 
 ];
 
-export default function StarlitCatch() {
+export default function TheLemonGame() {
 
     return (
         <div id="art">
@@ -56,13 +56,13 @@ export default function StarlitCatch() {
 
                 <ProjectDisplay project={
                     <div >
-                        <h1 style={{margin: 0}}>Starlit Catch</h1>
-                        <h4>November 2024</h4>
+                        <h1 style={{margin: 0}}>The Lemon Game (WIP)</h1>
+                        <h4>January 2025</h4>
 
-                        <p>Relax in your cottage and enjoy a peaceful fishing adventure. Relax by the water, enjoy the quiet, and take your time—there’s no rush. Just cast your line and enjoy a peaceful fishing experience in the woods.
+                        <p> When life gives you lemons...then what?
                         </p>
                         <br/>
-                        <p>This game was made for GAMERella 2024 jam within the 36 hours given. The theme for this competition was “Hearth”, and we worked in a team of 5. I worked as a programmer and tech artist. All assets and code were made within the duration of the jam.</p>
+                        <p>This game was started during a class teaching "Situational Game Design", in the 4 weeks given. However, we want to continue this game as there is so much more we could add, so consider this a demo of what could be! I worked as a programmer along with my amazing artist Tuana. All assets and code were made by us with the exception of most of the sound effects.</p>
 
                         <div style={{display: "flex"}}>
                             <div>
@@ -74,33 +74,17 @@ export default function StarlitCatch() {
 
                                         </li>
                                     </a>
-                                    <a href={"https://github.com/ZaidMinhas"}>
-                                        <li>
-                                            Zaid Minhas (Programmer)
-
-                                        </li>
-                                    </a>
-                                    <a href={"https://www.artstation.com/lenravi"}>
-                                        <li>
-                                            Elena Osman (2D Artist, UI Designer)
-                                        </li>
-                                    </a>
-                                    <a href={"https://linktr.ee/fauxless"}>
-                                        <li>
-                                            Sam Dalwood (Composer, Sound Designer)
-                                        </li>
-                                    </a>
 
                                 </ul>
 
                                 <h3 style={{fontSize: "26px", marginLeft: "2rem", color: "darkred"}}>+ me!
-                                    (programmer & tech art)</h3>
+                                    (programmer)</h3>
 
                             </div>
                             <div>
                             <h3>Links</h3>
                                 <ul>
-                                    <a href={"https://github.com/shinykiwi/cinderella-jam"}><li>
+                                    <a href={"https://github.com/shinykiwi/lemon-game"}><li>
                                         <GitHubIcon/>
 
                                     </li></a>
@@ -117,10 +101,7 @@ export default function StarlitCatch() {
                                                 Unity / C#
                                             </li>
                                             <li>Blender</li>
-                                            <li>Mixamo</li>
-                                            <li>Clip Studio Paint</li>
-                                            <li>Ableton Live</li>
-
+                                            <li>Substance Painter</li>
                                         </ul>
                                     </div>
 

@@ -19,6 +19,7 @@ import Me from "./routes/me";
 import DreamTeam from "./routes/dream-team";
 import AcademicWeapon from "./routes/academic-weapon";
 import StarlitCatch from "./routes/starlit-catch";
+import SleepyHavenHotel from "./routes/sleepy-haven-hotel";
 
 
 
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
             {
                 path: "code/starlit-catch",
                 element: <StarlitCatch/>
+            },
+            {
+                path: "code/sleepy-haven",
+                element: <SleepyHavenHotel/>
             },
             {
                 path: "code/sdl2-basic",

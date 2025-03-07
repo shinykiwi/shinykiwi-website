@@ -12,11 +12,10 @@ import trophies from "./games/prismagame/trophies.png";
 
 import ProjectDisplay from "../ProjectDisplay";
 
-import Screenshot1 from "./games/starlit-catch/starlit-catch_01.png";
-import Screenshot2 from "./games/starlit-catch/starlit-catch_02.png";
-import Screenshot3 from "./games/starlit-catch/starlit-catch_03.png";
-import Screenshot4 from "./games/starlit-catch/starlit-catch_04.png";
-import Screenshot5 from "./games/starlit-catch/starlit-catch_05.png";
+import Screenshot1 from "./games/sleepy-haven/sleepy_01.png";
+import Screenshot2 from "./games/sleepy-haven/sleepy_02.png";
+import Screenshot3 from "./games/sleepy-haven/sleepy_03.png";
+import Screenshot4 from "./games/sleepy-haven/sleepy_04.png";
 
 const containerSpacing = 2;
 const xs = 12;
@@ -41,14 +40,10 @@ const images = [
         original: Screenshot4,
         thumbnail: Screenshot4,
     },
-    {
-        original: Screenshot5,
-        thumbnail: Screenshot5,
-    },
 
 ];
 
-export default function StarlitCatch() {
+export default function SleepyHavenHotel() {
 
     return (
         <div id="art">
@@ -56,13 +51,13 @@ export default function StarlitCatch() {
 
                 <ProjectDisplay project={
                     <div >
-                        <h1 style={{margin: 0}}>Starlit Catch</h1>
-                        <h4>November 2024</h4>
+                        <h1 style={{margin: 0}}>Sleepy Haven Hotel</h1>
+                        <h4>December 2024</h4>
 
-                        <p>Relax in your cottage and enjoy a peaceful fishing adventure. Relax by the water, enjoy the quiet, and take your time—there’s no rush. Just cast your line and enjoy a peaceful fishing experience in the woods.
+                        <p>Welcome to the Sleepy Haven Hotel, a place where folks go for the best getaway you can find in the nation. And by that, I mean literally. Get to know the guests, and by the end of your shift deliver them their new identities. You must be very certain when choosing who gets what new identity, no mistakes will be tolerated here at the Hotel. Deliver coffee, clean up the hotel, eavesdrop, and use your persuasive conversation skills to get to know the guests.
                         </p>
                         <br/>
-                        <p>This game was made for GAMERella 2024 jam within the 36 hours given. The theme for this competition was “Hearth”, and we worked in a team of 5. I worked as a programmer and tech artist. All assets and code were made within the duration of the jam.</p>
+                        <p>This game was made for a class about creating 3D worlds for games.</p>
 
                         <div style={{display: "flex"}}>
                             <div>
@@ -74,33 +69,17 @@ export default function StarlitCatch() {
 
                                         </li>
                                     </a>
-                                    <a href={"https://github.com/ZaidMinhas"}>
-                                        <li>
-                                            Zaid Minhas (Programmer)
-
-                                        </li>
-                                    </a>
-                                    <a href={"https://www.artstation.com/lenravi"}>
-                                        <li>
-                                            Elena Osman (2D Artist, UI Designer)
-                                        </li>
-                                    </a>
-                                    <a href={"https://linktr.ee/fauxless"}>
-                                        <li>
-                                            Sam Dalwood (Composer, Sound Designer)
-                                        </li>
-                                    </a>
 
                                 </ul>
 
                                 <h3 style={{fontSize: "26px", marginLeft: "2rem", color: "darkred"}}>+ me!
-                                    (programmer & tech art)</h3>
+                                    (programmer)</h3>
 
                             </div>
                             <div>
                             <h3>Links</h3>
                                 <ul>
-                                    <a href={"https://github.com/shinykiwi/cinderella-jam"}><li>
+                                    <a href={"https://github.com/shinykiwi/cart498-game"}><li>
                                         <GitHubIcon/>
 
                                     </li></a>
@@ -113,14 +92,10 @@ export default function StarlitCatch() {
                                 <div >
                                     <div>
                                         <ul>
-                                            <li>
-                                                Unity / C#
-                                            </li>
+                                            <li>Unity / C#</li>
                                             <li>Blender</li>
+                                            <li>Substance Painter</li>
                                             <li>Mixamo</li>
-                                            <li>Clip Studio Paint</li>
-                                            <li>Ableton Live</li>
-
                                         </ul>
                                     </div>
 
@@ -131,11 +106,11 @@ export default function StarlitCatch() {
                             </div>
                         </div>
 
-                        {/*<div style={{textAlign: "center"}}>
+                        <div style={{textAlign: "center"}}>
                             <iframe width="840" height="475"
-                                    src="https://www.youtube.com/embed/B4lJhGOMk4E">
+                                    src="https://www.youtube.com/embed/atQ5E4fiPbo">
                             </iframe>
-                        </div>*/}
+                        </div>
 
                         <div>
                             <ImageGallery items={images} showPlayButton={false} showNav={false} slideDuration={200} showFullscreenButton={false}/>
@@ -218,12 +193,12 @@ export default function StarlitCatch() {
                         {/*<p>Players smoothly navigated our UI, grasping the game's goals pretty quickly. Most of the positive reception was regarding our camera transitions. For future iterations, animations like filling cups, diversifying recipes, and introducing a subtle timer for added challenges can make the game more engaging and satisfying while diversifying the game loop.</p>*/}
 
                         <h3 style={{marginTop: "3rem"}}>Want to play?</h3>
-                        <p>It's available on itch.io for Windows, Mac and the Web.</p>
+                        <p>It's available on itch.io for Windows and Mac.</p>
                         <div style={{}}>
                             <iframe frameBorder="0"
-                                    src="https://itch.io/embed/3132157?linkback=true&amp;border_width=2&amp;bg_color=0048ba&amp;fg_color=f7ecc5&amp;link_color=ffb32a&amp;border_color=373163"
-                                    width="554" height="169"><a href="https://tuanabicakci.itch.io/starlit-catch">Starlit
-                                Catch by Tuana Bıçakcı, Zaid The Programmer, Kira Fountain</a></iframe>
+                                    src="https://itch.io/embed/3161412?linkback=true&amp;bg_color=1b1b1b&amp;fg_color=faf0c7&amp;link_color=faf0c7&amp;border_color=ae9d9d"
+                                    width="552" height="167"><a href="https://shinykiwi.itch.io/sleepy-haven-hotel">Sleepy
+                                Haven Hotel by Kira Fountain, Tuana Bıçakcı</a></iframe>
 
                         </div>
 

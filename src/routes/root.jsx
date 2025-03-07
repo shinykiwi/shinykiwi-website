@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 export default function Root() {
     return (
         <>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <AppBar/>
                 <div style={{marginTop: "5rem"}}></div>
                 <Outlet/>

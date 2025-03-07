@@ -12,7 +12,7 @@ import SkyrimPPT from './pdfs/skyrim-presentation.pdf';
 import IntroToPixelArt from './pdfs/intro-to-pixel-art.pdf';
 import PixelArtForGames from './pdfs/pixelart-for-games.pdf';
 import EmailIcon from "@mui/icons-material/Email";
-import Resume from "./pdfs/KiraFountain-Resume.pdf";
+import Resume from "./pdfs/KiraFountain-Resume-2025.pdf";
 import PythonLogo from "./games/icons/python.svg";
 import CPPLogo from "./games/icons/cpp.svg";
 import JavaLogo from "./games/icons/java.svg";
