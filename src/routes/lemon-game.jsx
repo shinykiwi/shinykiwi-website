@@ -12,11 +12,11 @@ import trophies from "./games/prismagame/trophies.png";
 
 import ProjectDisplay from "../ProjectDisplay";
 
-import Screenshot1 from "./games/starlit-catch/starlit-catch_01.png";
-import Screenshot2 from "./games/starlit-catch/starlit-catch_02.png";
-import Screenshot3 from "./games/starlit-catch/starlit-catch_03.png";
-import Screenshot4 from "./games/starlit-catch/starlit-catch_04.png";
-import Screenshot5 from "./games/starlit-catch/starlit-catch_05.png";
+import Screenshot1 from "./games/lemon-game/lemon-game-01.png";
+import Screenshot2 from "./games/lemon-game/lemon-game-02.png";
+import Screenshot3 from "./games/lemon-game/lemon-game-03.png";
+import Screenshot4 from "./games/lemon-game/lemon-game-04.png";
+import Screenshot5 from "./games/lemon-game/lemon-game-05.png";
 
 const containerSpacing = 2;
 const xs = 12;
@@ -55,26 +55,25 @@ export default function TheLemonGame() {
             <Container maxWidth='lg'>
 
                 <ProjectDisplay project={
-                    <div >
+                    <div>
                         <h1 style={{margin: 0}}>The Lemon Game (WIP)</h1>
                         <h4>January 2025</h4>
 
-                        <p> When life gives you lemons...then what?
-                        </p>
+                        <p> When life gives you lemons...then what?</p>
                         <br/>
-                        <p>This game was started during a class teaching "Situational Game Design", in the 4 weeks given. However, we want to continue this game as there is so much more we could add, so consider this a demo of what could be! I worked as a programmer along with my amazing artist Tuana. All assets and code were made by us with the exception of most of the sound effects.</p>
+                        <p>This game was started during a class teaching "Situational Game Design", in the 4 weeks
+                            given. However, we want to continue this game as there is so much more we could add, so
+                            consider this a demo of what could be! I worked as a programmer along with my amazing artist
+                            Tuana. All assets and code were made by us with the exception of most of the sound effects.
+                            This game is actively being updated on our itch.io.</p>
 
                         <div style={{display: "flex"}}>
                             <div>
                                 <h3>Team</h3>
                                 <ul>
                                     <a href={"https://tuanabicakci.dev/"}>
-                                        <li>
-                                            Tuana Bıçakcı (3D Artist, Environment Designer)
-
-                                        </li>
+                                        <li>Tuana Bıçakcı (3D Artist, Environment Designer)</li>
                                     </a>
-
                                 </ul>
 
                                 <h3 style={{fontSize: "26px", marginLeft: "2rem", color: "darkred"}}>+ me!
@@ -82,33 +81,29 @@ export default function TheLemonGame() {
 
                             </div>
                             <div>
-                            <h3>Links</h3>
+                                <h3>Links</h3>
                                 <ul>
-                                    <a href={"https://github.com/shinykiwi/lemon-game"}><li>
-                                        <GitHubIcon/>
+                                    <a href={"https://github.com/shinykiwi/lemon-game"}>
+                                        <li>
+                                            <GitHubIcon/>
 
-                                    </li></a>
+                                        </li>
+                                    </a>
 
                                 </ul>
 
                             </div>
                             <div className={"tools"}>
                                 <h3>Tools</h3>
-                                <div >
+                                <div>
                                     <div>
                                         <ul>
-                                            <li>
-                                                Unity / C#
-                                            </li>
+                                            <li>Unity / C#</li>
                                             <li>Blender</li>
                                             <li>Substance Painter</li>
                                         </ul>
                                     </div>
-
-
                                 </div>
-
-
                             </div>
                         </div>
 
@@ -119,16 +114,70 @@ export default function TheLemonGame() {
                         </div>*/}
 
                         <div>
-                            <ImageGallery items={images} showPlayButton={false} showNav={false} slideDuration={200} showFullscreenButton={false}/>
+                            <ImageGallery items={images} showPlayButton={false} showNav={false} slideDuration={200}
+                                          showFullscreenButton={false}/>
 
                         </div>
 
-                        {/*<h3 style={{marginTop: "3rem"}}>Design Choices</h3>*/}
+                        <h3 style={{marginTop: "3rem"}}>My goals for the game</h3>
 
-                        {/*<p>We sought to blend the dynamic intensity of <em>Order Up </em>(2008) with the cozy appeal found in today's popular games. To achieve this, we've built a calming ambiance with soft color palettes, a minimalist UI, and a homely kitchen setting bathed in warm light.*/}
-                        {/*    We prioritized smooth camera transitions and gameplay flow to provide a calm experience for players without frustration.*/}
+                        <p>We started off this game wanting to make a game about experimentation, curiosity, and whimsy.
+                            The “when life gives you lemons, make lemonade” is such a cliche and I wanted to kind of
+                            make fun of that a bit by letting the player do really anything. The goal was to make the
+                            obvious path really obvious: to make lemonade, everyone knows that. But after the player is
+                            done making lemonade a bunch of times, I wanted them to be like “well what else?” That was
+                            my goal of this project, and I also wanted to put everything I’ve learned about game design
+                            and user experience to the test by trying to make interactions obvious enough to be used by
+                            the player with ease, but make things confusing enough to where the player is having fun. A
+                            little confusion can lead to curiosity and great satisfaction once you finally figure it
+                            out. <br/><br/>This was a great challenge as it turns out, and was probably the part that
+                            occupied my
+                            brain the most while coding this game. These were questions I was trying to keep in mind:
+                            <ol style={{all: "revert"}}>
+                                <li style={{all: "revert"}}>How can I make the player understand immediately what to
+                                    do?
+                                </li>
+                                <li style={{all: "revert"}}>How can I hook the player to want to try out other things?
+                                </li>
+                                <li style={{all: "revert"}}>What elements of the game are inherently playful?</li>
+                            </ol>
 
-                        {/*</p>*/}
+                        </p>
+
+                        <h3 style={{marginTop: "3rem"}}>Challenges from the demo</h3>
+                        <p>
+                            Throughout the project, the coding was never the difficult part, it was trying to make the
+                            interactions feel intuitive. At the playtest, I went in thinking that no one was going to
+                            understand how to play our game at all. Though I playtested plenty on my own, I wasn’t
+                            confident that someone else other than me was going to be able to figure it out. <br/><br/>The
+                            result was that some cues were more obvious than others; everyone understood that the
+                            doorbell
+                            meant there was someone or something at the door waiting, and could open the door to see the
+                            lemon delivery. To my dismay, every single player also understood (incorrectly) that the
+                            knife rack was so that the player could pick up a knife from there and slice the
+                            lemon. <br/>
+                            <br/>
+                            For me, making the game feel intuitive was the most challenging part. What will stick with
+                            me is
+                            that anytime you put anything in this kind of game, the player will want to play with it no
+                            matter what it is. And if your game doesn’t support that, then it feels disappointing to the
+                            player. Also, a fairly obvious one, that if you let the player learn that they can use
+                            various tools around the kitchen (like a water pitcher, a spoon, a sink, etc) and they find
+                            out they can’t use one specific tool for no reason (knife rack), they will assume either
+                            they haven’t unlocked it, they did something wrong, or they feel let down or mislead by the
+                            game because we built up this expectation and trust that was then destroyed. In future
+                            updates, we are working to change this.
+                        </p>
+
+                        <h3 style={{marginTop: "3rem"}}>Things that went well</h3>
+                        <p>
+                            I’ve worked with Tuana on a lot of games and game jams together, so we have become used to
+                            our workflows and how long it realistically takes us to implement things in a game. This
+                            meant that it was easy to create a real schedule that we could stick to, and we actually
+                            did. Everything went according to the schedule we set for ourselves and we were on target
+                            for the update and for the playtest.
+
+                        </p>
 
                         {/*<div className={"cover-img"}>*/}
                         {/*    <div style={{textAlign: "right"}}>*/}
@@ -199,18 +248,17 @@ export default function TheLemonGame() {
                         {/*<p>Players smoothly navigated our UI, grasping the game's goals pretty quickly. Most of the positive reception was regarding our camera transitions. For future iterations, animations like filling cups, diversifying recipes, and introducing a subtle timer for added challenges can make the game more engaging and satisfying while diversifying the game loop.</p>*/}
 
                         <h3 style={{marginTop: "3rem"}}>Want to play?</h3>
-                        <p>It's available on itch.io for Windows, Mac and the Web.</p>
+                        <p>It's available on itch.io for Windows and Mac.</p>
                         <div style={{}}>
                             <iframe frameBorder="0"
-                                    src="https://itch.io/embed/3132157?linkback=true&amp;border_width=2&amp;bg_color=0048ba&amp;fg_color=f7ecc5&amp;link_color=ffb32a&amp;border_color=373163"
-                                    width="554" height="169"><a href="https://tuanabicakci.itch.io/starlit-catch">Starlit
-                                Catch by Tuana Bıçakcı, Zaid The Programmer, Kira Fountain</a></iframe>
+                                    src="https://itch.io/embed/3334751?linkback=true&amp;bg_color=fdf5ec&amp;fg_color=3e0808&amp;link_color=fa5c5c&amp;border_color=d0bc65"
+                                    width="552" height="167"><a href="https://shinykiwi.itch.io/the-lemon-game">The
+                                Lemon Game by Kira Fountain, Tuana Bıçakcı</a></iframe>
 
                         </div>
 
                         {/*<h3 style={{marginTop: "3rem"}}>Takeaways</h3>*/}
                         {/*<p>This project pushed us into uncharted territory with its heavy reliance on UI, a departure from our usual games. The challenge was a great learning experience, and now, in future projects, we feel more comfortable with widgets and UI in Unreal Engine and are eager to experiment some more.</p>*/}
-
 
 
                         <h3 style={{marginTop: "2rem"}} className={"end-article"}>thanks for reading!</h3>

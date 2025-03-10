@@ -65,6 +65,11 @@ export default function Code() {
 
                 </div>*/}
 
+                <Project link={"/code/the-lemon-game"} image={"lemon-game/lemon-game-01.png"} title={"Lemon Game"}
+                         description={"This game is still in-development. It was originally made for an experimental game class over the course of 4 weeks. Two people worked on this project, myself as the programmer."}
+                         tagline={"When life gives you lemons...then what?"}
+                />
+
                 <Project link={"/code/sleepy-haven"} image={"sleepy-haven/sleepy_01.png"} title={"Sleepy Haven"}
                          description={"This game was made for a game class over the course of 4 weeks. This was my first attempt at a narrative game. Two people worked on this project, myself as the programmer."}
                          tagline={"Eerie 3D narrative game about hidden identities."}

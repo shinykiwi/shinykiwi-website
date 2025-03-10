@@ -20,6 +20,7 @@ import DreamTeam from "./routes/dream-team";
 import AcademicWeapon from "./routes/academic-weapon";
 import StarlitCatch from "./routes/starlit-catch";
 import SleepyHavenHotel from "./routes/sleepy-haven-hotel";
+import TheLemonGame from "./routes/lemon-game";
 
 
 
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
             {
                 path: "code/sleepy-haven",
                 element: <SleepyHavenHotel/>
+            },
+            {
+                path: "code/the-lemon-game",
+                element: <TheLemonGame/>
             },
             {
                 path: "code/sdl2-basic",

@@ -1,23 +1,9 @@
-import BasicModal from "../BasicModal";
 import * as React from "react";
-import Divider from "@mui/material/Divider";
 import Container from "@mui/material/Container";
-import DownloadIcon from '@mui/icons-material/Download';
 import {Accordion, AccordionDetails, AccordionSummary, Stack} from "@mui/material";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import SkyrimEssay from './pdfs/skyrim-essay.pdf';
-import SkyrimPPT from './pdfs/skyrim-presentation.pdf';
-import IntroToPixelArt from './pdfs/intro-to-pixel-art.pdf';
-import PixelArtForGames from './pdfs/pixelart-for-games.pdf';
 import EmailIcon from "@mui/icons-material/Email";
 import Resume from "./pdfs/KiraFountain-Resume-2025.pdf";
-import PythonLogo from "./games/icons/python.svg";
-import CPPLogo from "./games/icons/cpp.svg";
-import JavaLogo from "./games/icons/java.svg";
-import UnrealEngineLogo from "./games/icons/unreal.svg";
-import GodotLogo from "./games/icons/godot.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
