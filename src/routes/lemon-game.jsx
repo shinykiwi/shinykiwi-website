@@ -248,14 +248,18 @@ export default function TheLemonGame() {
                         {/*<p>Players smoothly navigated our UI, grasping the game's goals pretty quickly. Most of the positive reception was regarding our camera transitions. For future iterations, animations like filling cups, diversifying recipes, and introducing a subtle timer for added challenges can make the game more engaging and satisfying while diversifying the game loop.</p>*/}
 
                         <h3 style={{marginTop: "3rem"}}>Want to play?</h3>
-                        <p>It's available on itch.io for Windows and Mac.</p>
-                        <div style={{}}>
-                            <iframe frameBorder="0"
-                                    src="https://itch.io/embed/3334751?linkback=true&amp;bg_color=fdf5ec&amp;fg_color=3e0808&amp;link_color=fa5c5c&amp;border_color=d0bc65"
-                                    width="552" height="167"><a href="https://shinykiwi.itch.io/the-lemon-game">The
-                                Lemon Game by Kira Fountain, Tuana Bıçakcı</a></iframe>
+                        <p>It's available on itch.io for Windows and Mac. Here's the secret link for now. The password is <b>lemon</b>. </p>
+                        <a href={"https://shinykiwi.itch.io/the-lemon-game"}>
+                            https://shinykiwi.itch.io/the-lemon-game
+                        </a>
 
-                        </div>
+                        {/*<div style={{}}>*/}
+                        {/*    /!*<iframe frameBorder="0"*!/*/}
+                        {/*    /!*        src="https://itch.io/embed/3334751?linkback=true&amp;bg_color=fdf5ec&amp;fg_color=3e0808&amp;link_color=fa5c5c&amp;border_color=d0bc65"*!/*/}
+                        {/*    /!*        width="552" height="167"><a href="https://shinykiwi.itch.io/the-lemon-game">The*!/*/}
+                        {/*    /!*    Lemon Game by Kira Fountain, Tuana Bıçakcı</a></iframe>*!/*/}
+
+                        {/*</div>*/}
 
                         {/*<h3 style={{marginTop: "3rem"}}>Takeaways</h3>*/}
                         {/*<p>This project pushed us into uncharted territory with its heavy reliance on UI, a departure from our usual games. The challenge was a great learning experience, and now, in future projects, we feel more comfortable with widgets and UI in Unreal Engine and are eager to experiment some more.</p>*/}
