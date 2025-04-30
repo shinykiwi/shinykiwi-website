@@ -20,14 +20,9 @@ export default function Other() {
 
 
             <Container maxWidth={'lg'} id={"other"}>
-                <h1>Notes</h1>
-                <div style={{fontSize:"18px"}}>
-                    <a></a>
-                </div>
-
 
                 <div>
-                    <Accordion defaultExpanded={true}>
+                    <Accordion defaultExpanded={false}>
                         <AccordionSummary sx={{backgroundColor: "#F7F7F7 "}}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -82,13 +77,13 @@ export default function Other() {
                         </AccordionDetails>
                     </Accordion>
 
-                    <Accordion defaultExpanded={true}>
+                    <Accordion defaultExpanded={false}>
                         <AccordionSummary sx={{backgroundColor: "#F7F7F7 "}}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                         >
-                            <h2 style={{margin:"1rem", backgroundColor:"#FFD8ED"}}>Unpublished Publications</h2>
+                            <h2 style={{margin:"1rem", backgroundColor:"#FFD8ED"}}>Essays</h2>
                             <Divider/>
                         </AccordionSummary>
                         <AccordionDetails >

@@ -21,6 +21,8 @@ import AcademicWeapon from "./routes/academic-weapon";
 import StarlitCatch from "./routes/starlit-catch";
 import SleepyHavenHotel from "./routes/sleepy-haven-hotel";
 import TheLemonGame from "./routes/lemon-game";
+import Posts from "./routes/posts";
+import TheSituation from "./routes/the-situation";
 
 
 
@@ -49,6 +51,10 @@ const router = createBrowserRouter([
             {
                 path: "me",
                 element: <Me/>
+            },
+            {
+                path: "posts",
+                element: <Posts/>
             },
             {
                 path: "code/miracle-daycare",
@@ -85,6 +91,10 @@ const router = createBrowserRouter([
             {
                 path: "code/the-lemon-game",
                 element: <TheLemonGame/>
+            },
+            {
+                path: "code/the-situation",
+                element: <TheSituation/>
             },
             {
                 path: "code/sdl2-basic",

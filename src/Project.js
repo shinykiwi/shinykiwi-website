@@ -3,8 +3,8 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 export default function Project(props) {
     return (
-        <div >
-            <div style={{borderBottom: "solid black 1px", marginTop: "5rem",  marginBottom: "3rem", opacity: "50%"}}></div>
+        <div>
+
             <div className={"project-header"}>
                 <div>
                     <h1>{props.title}</h1>
@@ -21,8 +21,14 @@ export default function Project(props) {
                 </div>
             </div>
             <div className={"cover-img"} style={{marginTop: "2rem"}}>
-                <img  src={require(`./routes/games/${props.image}`)}/>
+                <img src={require(`./routes/games/${props.image}`)}/>
             </div>
+            <div style={{
+                borderBottom: "solid black 1px",
+                marginTop: "5rem",
+                marginBottom: "3rem",
+                opacity: "50%"
+            }}></div>
         </div>
 
     );

@@ -12,19 +12,9 @@ import ArticleIcon from "@mui/icons-material/Article";
 
 export default function ButtonAppBar() {
     return (
-        <Box sx={{ flexGrow: 1, marginTop: "4rem" }}>
-            <AppBar position="static" sx={{boxShadow: "none", color: "black", backgroundColor: "rgba(0,0,0,0)" }}>
+        <Box sx={{flexGrow: 1, marginTop: "4rem"}}>
+            <AppBar position="static" sx={{boxShadow: "none", color: "black", backgroundColor: "rgba(0,0,0,0)"}}>
                 <Toolbar>
-                    {/*<IconButton*/}
-                    {/*    size="large"*/}
-                    {/*    edge="start"*/}
-                    {/*    color="inherit"*/}
-                    {/*    aria-label="menu"*/}
-                    {/*    sx={{mr: 2}}*/}
-                    {/*>*/}
-                    {/*    <MenuIcon/>*/}
-                    {/*</IconButton>*/}
-
                     <h1 style={{fontFamily: "Spectral, serif", lineHeight: "1", width: "80%",}}>Kira Fountain</h1>
 
                     <div style={{
@@ -57,6 +47,13 @@ export default function ButtonAppBar() {
 
                 </Toolbar>
             </AppBar>
+
+            <div style={{
+                borderBottom: "solid black 1px",
+                marginTop: "1rem",
+                marginBottom: "1rem",
+                opacity: "50%"
+            }}></div>
         </Box>
     )
         ;
