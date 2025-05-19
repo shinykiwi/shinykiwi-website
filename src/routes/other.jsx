@@ -1,4 +1,4 @@
-import BasicModal from "../BasicModal";
+import BasicModal from "../components/BasicModal";
 import * as React from "react";
 import Divider from "@mui/material/Divider";
 import Container from "@mui/material/Container";

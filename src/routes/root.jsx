@@ -1,5 +1,5 @@
 import {Outlet} from "react-router-dom";
-import AppBar from "../AppBar";
+import AppBar from "../components/AppBar";
 import * as React from "react";
 import Container from "@mui/material/Container";
 

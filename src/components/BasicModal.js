@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const style = {
@@ -34,7 +32,7 @@ export default function BasicModal(props) {
                 >
                     <Box sx={style}>
                         <div>
-                            <img src={require(`./routes/art/${props.image}`)} alt={props.title} className={'image'}/>
+                            <img src={require(`../routes/art/${props.image}`)} alt={props.title} className={'image'}/>
                         </div>
 
                         <div style={{display: "flex"}}>
@@ -68,7 +66,7 @@ export default function BasicModal(props) {
                 >
                     <Box sx={style}>
                         <div>
-                            <img src={require(`./routes/art/${props.image}`)} alt={props.title} className={'image'}/>
+                            <img src={require(`../routes/art/${props.image}`)} alt={props.title} className={'image'}/>
                         </div>
 
                         <div style={{display: "flex"}}>

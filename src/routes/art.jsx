@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import {Box, ImageList, ImageListItem} from "@mui/material";
-import BasicModal from "../BasicModal";
+import BasicModal from "../components/BasicModal";
 
 const containerSpacing = 0;
 const xs = 12;
