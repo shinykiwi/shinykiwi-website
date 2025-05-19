@@ -16,54 +16,12 @@ export default function Code() {
     return (
         <div id="art">
 
-            {/*<div >*/}
-            {/*    <h1>Hi, I'm Kira</h1>*/}
-            {/*    <div style={{display: "flex", marginTop: "1rem"}}>*/}
-
-            {/*        <a href={"mailto:kafountain5@gmail.com"}><h3*/}
-            {/*            style={{fontFamily: "Patrick Hand, cursive", fontSize: "18px", marginRight: "1rem"}}>*/}
-            {/*            <EmailIcon/></h3></a>*/}
-            {/*        <a href={Resume} target={"_blank"}><h3*/}
-            {/*            style={{fontFamily: "Patrick Hand, cursive", fontSize: "18px"}}>Resume</h3>*/}
-            {/*        </a>*/}
-            {/*    </div>*/}
-            {/*    <p style={{marginBottom: "2rem"}}>I'm a game development student based in Montreal, QC. I'm in my*/}
-            {/*        fourth year, studying Computer*/}
-            {/*        Science and Computation Arts*/}
-            {/*        at <a*/}
-            {/*            href={"https://www.concordia.ca/academics/undergraduate/computer-science-comp-arts.html"}>Concordia*/}
-            {/*            University</a>.*/}
-            {/*        My main focus thus far has been on game programming, however I have a variety of experience*/}
-            {/*        with*/}
-            {/*        software development, databases, web development and various APIs.*/}
-            {/*        Here you can find all my projects related to the world of programming. </p>*/}
-
-            {/*</div>*/}
-
             <Container maxWidth={'lg'}>
-                {/*<div style={{background: "green"}}>
-                    <h1>Hi, I'm Kira</h1>
-                    <div style={{display: "flex", marginTop: "1rem"}}>
 
-                        <a href={"mailto:kafountain5@gmail.com"}><h3
-                            style={{fontFamily: "Patrick Hand, cursive", fontSize: "18px", marginRight: "1rem"}}>
-                            <EmailIcon/></h3></a>
-                        <a href={Resume} target={"_blank"}><h3
-                            style={{fontFamily: "Patrick Hand, cursive", fontSize: "18px"}}>Resume</h3>
-                        </a>
-                    </div>
-                    <p style={{marginBottom: "2rem"}}>I'm a game development student based in Montreal, QC. I'm in my
-                        fourth year, studying Computer
-                        Science and Computation Arts
-                        at <a
-                            href={"https://www.concordia.ca/academics/undergraduate/computer-science-comp-arts.html"}>Concordia
-                            University</a>.
-                        My main focus thus far has been on game programming, however I have a variety of experience
-                        with
-                        software development, databases, web development and various APIs.
-                        Here you can find all my projects related to the world of programming. </p>
-
-                </div>*/}
+                <Project link={"/code/academic-master"} image={"academic-master/am-03.png"} title={"Academic Master"}
+                         description={"An educational game, teaching teachers how to teach, made in 36 hours. I was one of three programmers."}
+                         tagline={"Experiment with teaching strategies!"}
+                />
 
                 <Project link={"/code/the-situation"} image={"the-situation/situation_09.png"} title={"The Situation"}
                          description={"A meta game about our game design class, made over the course of 4 weeks. Two people worked on this project, myself as the programmer."}

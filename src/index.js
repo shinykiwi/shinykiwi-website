@@ -23,6 +23,7 @@ import SleepyHavenHotel from "./routes/sleepy-haven-hotel";
 import TheLemonGame from "./routes/lemon-game";
 import Posts from "./routes/posts";
 import TheSituation from "./routes/the-situation";
+import AcademicMaster from "./routes/academic-master";
 
 
 
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
             {
                 path: "code/the-situation",
                 element: <TheSituation/>
+            },
+            {
+                path: "code/academic-master",
+                element: <AcademicMaster/>
             },
             {
                 path: "code/sdl2-basic",
